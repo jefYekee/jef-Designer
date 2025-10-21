@@ -1,0 +1,57 @@
+/* src/assets/fonts/fonts.css */
+
+/* Light */
+@font-face {
+    font-family: 'Bank Gothic Light';
+    src: url('./BankGothicLtBTLight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Regular */
+  @font-face {
+    font-family: 'Bank Gothic Regular';
+    src: url('./bankgothic-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Medium */
+  @font-face {
+    font-family: 'Bank Gothic Medium';
+    src: url('./BankGothicMediumBT.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Bold */
+  @font-face {
+    font-family: 'Bank Gothic Bold';
+    src: url('./BankGothic Md BT.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  /* Medium Russian */
+  @font-face {
+    font-family: 'Bank Gothic Medium Russian';
+    src: url('./BankGothicRUSSMedium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  /* Additional Fonts */
+  @font-face {
+    font-family: 'Bank Gothic Additional';
+    src: url('./unicode.bankgotm.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Bank Gothic Regular DB';
+    src: url('./bankgothic-regulardb.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
