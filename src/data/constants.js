@@ -4,16 +4,12 @@ export const Bio = {
   roles: [
     "UI/UX Designer",
     "Graphic Designer",
-    "Web & Mobile App UI Designer",
+    "Web & Mobile App Developer",
     "Brand Identity Creator"
   ],
   description: `
     I specialize in creating intuitive and engaging UI/UX designs for websites and mobile apps — transforming ideas from the <strong>PLAN → DESIGN → DEVELOP</strong> process into seamless digital experiences. My expertise spans both graphic and interface design, where I bring brand visions to life through logos, business cards, promotional materials, and interactive UI components. Working across <span style="color: #66ff33; text-decoration: underline;">design and development</span>, I ensure every project is visually captivating and technically robust, using tools and technologies like <span style="color: #66ff33; text-decoration: underline;">Figma</span>, <span style="color: #66ff33; text-decoration: underline;">Adobe Illustrator</span>, <span style="color: #66ff33; text-decoration: underline;">Photoshop</span>, <span style="color: #66ff33; text-decoration: underline;">HTML</span>, <span style="color: #66ff33; text-decoration: underline;">CSS</span>, <span style="color: #66ff33; text-decoration: underline;">JavaScript</span>, <span style="color: #66ff33; text-decoration: underline;">React</span>, and <span style="color: #66ff33; text-decoration: underline;">Node.js</span>. My goal is to deliver end-to-end solutions that not only look great but also function flawlessly — turning concepts into code.
   `,
-  github: "https://github.com/print-design-studio", // Placeholder, update as needed
-  resume: "https://drive.google.com/file/d/1_KlRUKBcue9QPiwgR6PAgAn7HeLrWQiv/view?usp=sharing", // Placeholder link
-  linkedin: "https://www.linkedin.com/company/print-design-studio/", // Placeholder, update as needed
-  insta: "https://instagram.com/printdesignstudio", // Placeholder, update as needed
 };
 
 
