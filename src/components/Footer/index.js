@@ -93,8 +93,8 @@ function Footer() {
         <Nav>
           {/* <NavLink href="#about">About</NavLink> */}
           <NavLink href="#skills">Creative Tools</NavLink>
-          <NavLink href="#experience">Experience</NavLink>
-          {/* <NavLink href="#projects">Projects</NavLink> */}
+          {/* <NavLink href="#experience">Experience</NavLink> */}
+          <NavLink href="#projects">Projects</NavLink>
           <NavLink href='#contact'>contact</NavLink>
           
           {/* <NavLink href="#education">Education</NavLink> */}
