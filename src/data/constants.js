@@ -8,10 +8,23 @@ export const Bio = {
     "Brand Identity Creator"
   ],
   description: `
-    I specialize in creating intuitive and engaging UI/UX designs for websites and mobile apps — transforming ideas from the <strong>PLAN → DESIGN → DEVELOP</strong> process into seamless digital experiences. My expertise spans both graphic and interface design, where I bring brand visions to life through logos, business cards, promotional materials, and interactive UI components. Working across <span style="color: #66ff33; text-decoration: underline;">design and development</span>, I ensure every project is visually captivating and technically robust, using tools and technologies like <span style="color: #66ff33; text-decoration: underline;">Figma</span>, <span style="color: #66ff33; text-decoration: underline;">Adobe Illustrator</span>, <span style="color: #66ff33; text-decoration: underline;">Photoshop</span>, <span style="color: #66ff33; text-decoration: underline;">HTML</span>, <span style="color: #66ff33; text-decoration: underline;">CSS</span>, <span style="color: #66ff33; text-decoration: underline;">JavaScript</span>, <span style="color: #66ff33; text-decoration: underline;">React</span>, and <span style="color: #66ff33; text-decoration: underline;">Node.js</span>. My goal is to deliver end-to-end solutions that not only look great but also function flawlessly — turning concepts into code.
+<p>
+    I am a <strong>UI/UX Designer</strong> and <strong>Front-End Developer</strong> focused on creating <strong>intuitive, engaging, and technically robust</strong> digital experiences.
+</p>
+<p>
+  I manage the complete <strong>IDEA &rarr; PLAN &rarr; DESIGN &rarr; DEVELOP</strong> process, integrating interface design with graphic design and development.
+</p>
+<p>
+    My toolkit includes 
+    <span style="color: #66ff33; font-weight: 600;">Figma</span>, 
+    <span style="color: #66ff33; font-weight: 600;">Adobe tools</span>, 
+    <span style="color: #66ff33; font-weight: 600;">HTML/CSS/JavaScript</span>, 
+    <span style="color: #66ff33; font-weight: 600;">React</span>, and 
+    <span style="color: #66ff33; font-weight: 600;">Node.js</span>. 
+    I deliver <strong>end-to-end solutions</strong> that turn great concepts into flawless code.
+</p>
   `,
 };
-
 
 export const skills = [
   {

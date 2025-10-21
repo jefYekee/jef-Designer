@@ -92,9 +92,11 @@ function Footer() {
         <Logo>🚀   Jef_Designer  🚀 </Logo>
         <Nav>
           {/* <NavLink href="#about">About</NavLink> */}
-          <NavLink href="#skills">Skills</NavLink>
+          <NavLink href="#skills">Creative Tools</NavLink>
           <NavLink href="#experience">Experience</NavLink>
-          <NavLink href="#projects">Projects</NavLink>
+          {/* <NavLink href="#projects">Projects</NavLink> */}
+          <NavLink href='#contact'>contact</NavLink>
+          
           {/* <NavLink href="#education">Education</NavLink> */}
         </Nav>
         <SocialMediaIcons>
