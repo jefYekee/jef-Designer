@@ -186,9 +186,74 @@ export const projects = [
     category: "graphic design",
     // webapp: "https://hotelsantamaria-arua.com/",
   },
+
+   {
+    id: 1,
+    title: "Wallpaper Designs",
+    description:
+      "Explore a selection of thoughtfully crafted logos, each a visual representation of brand identity. Crafted using Illustrator, Figma, and Photoshop, these logos go beyond design—they embody brand values. Take a closer look at how creativity, precision, and innovation converge to shape impactful brand identities.",
+    image: require("../images/Wallpaper-2.png"),
+
+    tags: [
+      "FIGMA",
+      "PHOTOSHOP",
+      "ILLUSTRATOR",
+    ],
+    category: "graphic design",
+    // webapp: "https://hotelsantamaria-arua.com/",
+  },
+
+ {
+    id: 2,
+    title: "Wallpaper Designs",
+    description:
+      "Explore a selection of thoughtfully crafted logos, each a visual representation of brand identity. Crafted using Illustrator, Figma, and Photoshop, these logos go beyond design—they embody brand values. Take a closer look at how creativity, precision, and innovation converge to shape impactful brand identities.",
+    image: require("../images/Text-effect.jpg"),
+
+    tags: [
+      "FIGMA",
+      "PHOTOSHOP",
+      "ILLUSTRATOR",
+    ],
+    category: "graphic design",
+    // webapp: "https://hotelsantamaria-arua.com/",
+  },
+
+  
+ {
+    id: 3,
+    title: "Xtrem-Furniture POSTER",
+    description:
+      "Explore a selection of thoughtfully crafted logos, each a visual representation of brand identity. Crafted using Illustrator, Figma, and Photoshop, these logos go beyond design—they embody brand values. Take a closer look at how creativity, precision, and innovation converge to shape impactful brand identities.",
+    image: require("../images/xtrem-furniture.png"),
+
+    tags: [
+      "FIGMA",
+      "PHOTOSHOP",
+      "ILLUSTRATOR",
+    ],
+    category: "graphic design",
+    // webapp: "https://hotelsantamaria-arua.com/",
+  },
+
+    {
+    id: 4,
+    title: "Wallpaper Designs",
+    description:
+      "Explore a selection of thoughtfully crafted logos, each a visual representation of brand identity. Crafted using Illustrator, Figma, and Photoshop, these logos go beyond design—they embody brand values. Take a closer look at how creativity, precision, and innovation converge to shape impactful brand identities.",
+    image: require("../images/Desktop-Wallpaper.png"),
+
+    tags: [
+      "FIGMA",
+      "PHOTOSHOP",
+      "ILLUSTRATOR",
+    ],
+    category: "graphic design",
+    // webapp: "https://hotelsantamaria-arua.com/",
+  },
   
   {
-    "id": 4,
+    "id": 5,
     "title": "web Agency",
     "description": "This UI showcases a sleek and modern website design for an innovative IT agency. With a focus on clean aesthetics and user-friendly navigation, the design seamlessly adapts to both desktop and mobile screens, ensuring a smooth experience across all devices. The layout highlights the agency's expertise in technology solutions, featuring intuitive sections for services, portfolio, and client engagement. This design is crafted to enhance user interaction and reflect the agency’s cutting-edge approach to digital transformation",
     image: require("../images/projects/web-app.jpg"),
@@ -201,7 +266,7 @@ export const projects = [
   },
 
   {
-    id: 5,
+    id: 6,
     title: "TEAMWORK HOMECARE",
     description:
       "This UI showcases a sleek and modern mobile app design for Teamwork Homecare, a seamless platform for booking nurses and healthcare professionals. Designed with a user-friendly interface and intuitive navigation, the app ensures effortless access to essential healthcare services.",
@@ -217,32 +282,7 @@ export const projects = [
     
   },
  
-  // {
-  //   id: 7,
-  //   title: "Creative Logo Showcase",
-  //   // date: "Jan 2021, ",
-  //   description:
-  //     "Explore a selection of thoughtfully crafted logos, each a visual representation of brand identity. Crafted using Illustrator, Figma, and Photoshop, these logos go beyond design—they embody brand values. Take a closer look at how creativity, precision, and innovation converge to shape impactful brand identities.",
-  //   image:
-  //     "https://docs.vigilantliving.org/wp-content/uploads/2023/11/Logos.png",
-  //   tags: ["illustrator, Figma, Photoshop"],
-  //   category: "graphic design",
-  //   github: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
-  //   webapp: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
-  // },
-  // {
-  //   id: 8,
-  //   title: "Layered Flyer Designs ",
-  //   // date: "Jan 2021",
-  //   description:
-  //     "Explore intricately designed flyers that captivate visually. Made with Figma, Canva, and Photoshop, these go beyond typical flyers, inviting you to discover layers of creativity. Immerse yourself in this collection and experience the artistry defining these compelling visual invitations.",
-  //   image:
-  //     "https://docs.vigilantliving.org/wp-content/uploads/2023/11/Flyers-1-1.png",
-  //   tags: ["Figma, Canva, Photoshop"],
-  //   category: "graphic design",
-  //   github: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
-  //   // webapp: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
-  // },
+  
 ];
 
 export const mypackages = [
