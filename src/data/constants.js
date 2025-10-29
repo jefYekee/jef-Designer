@@ -222,10 +222,10 @@ export const projects = [
   
  {
     id: 3,
-    title: "Xtrem-Furniture POSTER",
+    title: "Fuurniture Sale POSTER",
     description:
       "Explore a selection of thoughtfully crafted logos, each a visual representation of brand identity. Crafted using Illustrator, Figma, and Photoshop, these logos go beyond design—they embody brand values. Take a closer look at how creativity, precision, and innovation converge to shape impactful brand identities.",
-    image: require("../images/xtrem-furniture.png"),
+    image: require("../images/Sofa-sale.jpeg"),
 
     tags: [
       "FIGMA",

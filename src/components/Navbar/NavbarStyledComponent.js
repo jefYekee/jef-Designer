@@ -1,34 +1,60 @@
 import { Link as LinkR } from 'react-router-dom';
 import styled from 'styled-components';
 
+// src/components/Navbar/NavbarStyledComponent.js
+
 export const Nav = styled.div`
-    background-color: ${({ theme }) => theme.card_light};
-    height: 120px;
+    height: 60px; /* shorter for a cleaner, premium look */
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1rem;
     position: sticky;
     top: 0;
-    z-index: 10;
+    width: 95%;
+    margin: 10px auto;
+    border-radius: 14px;
+    padding: 0 10px;
+    
+    /* Glassmorphism base */
+    background: rgba(15, 15, 25, 0.55);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    
+    /* Subtle blue glow for style */
+    box-shadow: 0 4px 25px rgba(0, 80, 255, 0.2), 0 0 15px rgba(0, 100, 255, 0.15);
+    
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    z-index: 999;
+    transition: all 0.4s ease-in-out;
+
     @media (max-width: 960px) {
-        transition: 0.8s all ease;
+        width: 90%;
+        height: 55px;
+        border-radius: 12px;
+    }
+
+    @media (max-width: 600px) {
+        width: 94%;
+        height: 50px;
+        border-radius: 10px;
+        box-shadow: 0 2px 15px rgba(0, 80, 255, 0.25);
     }
 `;
 
+
 export const NavbarContainer = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 80px;
-  z-index: 1;
-  width: 100%;
-  padding: 0 24px;
-  max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    max-width: 1200px;
+    padding: 0 16px;
+
 `;
 
 export const NavLogo = styled(LinkR)`
-    width: 80%;    
     padding: 0 6px;
     display: flex;
     justify-content: start;
@@ -36,25 +62,25 @@ export const NavLogo = styled(LinkR)`
     text-decoration: none;
 
     img {
-      width: 150px; /* Default width */
-      height: 120px; /* Default height */
-      transition: width 0.3s, height 0.3s;
+        width: 100px; 
+        height: 60px;
+        transition: width 0.3s, height 0.3s;
     }
 
     @media (max-width: 768px) {
-      padding: 0;
-      img {
-        width: 120px; /* Adjust width for tablets */
-        height: 100px; /* Adjust height for tablets */
-      }
+        padding: 0;
+        img {
+            width: 60px; 
+            height: 50px; 
+        }
     }
 
     @media (max-width: 480px) {
-      padding: 0;
-      img {
-        width: 100px; /* Further adjust width for small screens */
-        height: 80px; /* Further adjust height for small screens */
-      }
+        padding: 0;
+        img {
+            width: 50px;
+            height: 40px;
+        }
     }
 `;
 
@@ -65,20 +91,142 @@ export const Span = styled.div`
 `;
 
 export const NavItems = styled.ul`
-    width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 32px;
-    padding: 0 10px;
     list-style: none;
+    padding: 0;
 
     @media screen and (max-width: 768px) {
       display: none;
     }
 `;
 
+
 export const NavLink = styled.a`
+    // Navigation link color (Dark Indigo)
+    color: #0C0763; 
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+    
+    :hover {
+        color: #FFFFFF; // White text on hover
+    }
+`;
+
+export const MobileHireButton = styled.a`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  border-radius: 25px;
+  color: #fff;
+  background: linear-gradient(135deg, #5d00ff, #1e90ff);
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+  width: max-content;
+  border: 1.8px solid #0C0763;
+  transition: all 0.3s ease-in-out;
+
+  :hover {
+    background: linear-gradient(135deg, #1e90ff, #5d00ff);
+    transform: scale(1.05);
+  }
+
+  @media (max-width: 480px) {
+    padding: 8px 16px;
+    font-size: 15px;
+  }
+`;
+
+export const ButtonContainer = styled.div`
+    width: 80%; 
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding: 0 6px;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+`;
+
+export const MobileIcon = styled.div`
+  display: none;
+
+  @media screen and (max-width: 768px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 18px;
+    top: 15px;
+    font-size: 1.7rem;
+    cursor: pointer;
+    color: #0C0763; /* Indigo for consistency */
+    transition: color 0.3s ease;
+
+    :hover {
+      color: #1e90ff; /* Soft blue on hover */
+    }
+  }
+`;
+
+export const MobileMenu = styled.div`
+  position: absolute;
+  top: 60px;
+  right: 0;
+  width: 100%;
+  padding: 20px 0 30px 0;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+
+  /* Elegant Glassmorphism */
+  background: rgba(15, 15, 25, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  /* Blue glow for branding */
+  box-shadow: 0 0 20px rgba(0, 102, 255, 0.25);
+
+  transition: all 0.5s ease-in-out;
+  transform: ${({ isOpen }) => (isOpen ? 'translateY(0)' : 'translateY(-100%)')};
+  opacity: ${({ isOpen }) => (isOpen ? '1' : '0')};
+  border-radius: 0 0 18px 18px;
+  z-index: ${({ isOpen }) => (isOpen ? '999' : '-1')};
+
+  @media (max-width: 600px) {
+    gap: 14px;
+    padding: 16px 0 24px 0;
+  }
+`;
+
+export const MobileMenuItems = styled.ul`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    list-style: none;
+    width: 100%;
+    height: 100%;
+`;
+
+export const MobileMenuLink = styled(LinkR)`
     color: ${({ theme }) => theme.text_primary};
     font-weight: 500;
     cursor: pointer;
@@ -93,159 +241,62 @@ export const NavLink = styled.a`
     }
 `;
 
-export const GitHubButton = styled.a`
-  border: 1.8px solid ${({ theme }) => theme.primary};
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  height: 70%;
-  border-radius: 20px;
-  color: ${({ theme }) => theme.primary};
-  cursor: pointer;
-  padding: 0 20px;
-  font-weight: 500;
-  text-decoration: none;
-  font-size: 16px;
-  transition: all 0.6s ease-in-out;
-
-  :hover {
-    background: ${({ theme }) => theme.primary};
-    color: ${({ theme }) => theme.white};
-  }
-
-  @media screen and (max-width: 768px) {
-    font-size: 14px;
-  }
-`;
-
-export const ButtonContainer = styled.div`
-  width: 80%;  
-  height: 100%;
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  padding: 0 6px;
-
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
-`;
-
-export const MobileIcon = styled.div`
-  display: none;
-
-  @media screen and (max-width: 768px) {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    transform: translate(-100%, 60%);
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: ${({ theme }) => theme.text_primary};
-  }
-`;
-
-export const MobileMenu = styled.div`
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 16px;
-    position: absolute;
-    top: 80px;
-    right: 0;
-    width: 100%;
-    padding: 12px 40px 24px 40px;
-    background: ${({ theme }) => theme.card_light + '99'};
-    transition: all 0.6s ease-in-out;
-    transform: ${({ isOpen }) => (isOpen ? 'translateY(0)' : 'translateY(-100%)')};
-    border-radius: 0 0 20px 20px;
-    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
-    opacity: ${({ isOpen }) => (isOpen ? '100%' : '0')};
-    z-index: ${({ isOpen }) => (isOpen ? '1000' : '-1000')};
-`;
-
-export const MobileMenuItems = styled.ul`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 32px;
-  list-style: none;
-  width: 100%;
-  height: 100%;
-`;
-
-export const MobileMenuLink = styled(LinkR)`
-  color: ${({ theme }) => theme.text_primary};
-  font-weight: 500;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-  text-decoration: none;
-  :hover {
-    color: ${({ theme }) => theme.primary};
-  }
-
-  &.active {
-    border-bottom: 2px solid ${({ theme }) => theme.primary};
-  }
-`;
-
-export const MobileMenuButton = styled.a`
-  border: 1.8px solid ${({ theme }) => theme.primary};
-  justify-content: center;
-  display: flex;
-  align-items: center;
-  height: 70%;
-  border-radius: 20px;
-  color: ${({ theme }) => theme.primary};
-  cursor: pointer;
-  padding: 0 20px;
-  font-weight: 500;
-  text-decoration: none;
-  font-size: 16px;
-  transition: all 0.6s ease-in-out;
-
-  :hover {
-    background: ${({ theme }) => theme.primary};
-    color: ${({ theme }) => theme.white};
-  }
-`;
-
 export const MobileLink = styled.a`
-  color: ${({ theme }) => theme.text_primary};
+  color: #ffffff;
   font-weight: 500;
+  font-size: 1.05rem;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   text-decoration: none;
-  :hover {
-    color: ${({ theme }) => theme.primary};
-  }
 
-  &.active {
-    border-bottom: 2px solid ${({ theme }) => theme.primary};
+  :hover {
+    color: #1e90ff; /* Matches glow */
   }
+`;
+
+
+// Mobile-specific button using the dark indigo style
+export const MobileMenuButton = styled.a`
+    border: 1.8px solid #0C0763;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    border-radius: 20px;
+    color: #0C0763;
+    cursor: pointer;
+    padding: 10px 16px; 
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 16px;
+    width: max-content; 
+    transition: all 0.6s ease-in-out;
+
+    :hover {
+        background: #0C0763;
+        color: ${({ theme }) => theme.white};
+    }
 `;
 
 export const MobileNavLogo = styled(LinkR)`
-  width: 80%;
-  padding: 0 6px;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  text-decoration: none;
+    width: 80%;
+    padding: 0 6px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    text-decoration: none;
 
-  img {
-    width: 120px; /* Adjust width for tablets */
-    height: 100px; /* Adjust height for tablets */
-    transition: width 0.3s, height 0.3s;
-  }
-
-  @media (max-width: 480px) {
-    padding: 0;
     img {
-      width: 100px; /* Further adjust width for small screens */
-      height: 80px; /* Further adjust height for small screens */
+        width: 120px; 
+        height: 100px; 
+        transition: width 0.3s, height 0.3s;
     }
-  }
+
+    @media (max-width: 480px) {
+        padding: 0;
+        img {
+            width: 100px; 
+            height: 80px; 
+        }
+    }
 `;

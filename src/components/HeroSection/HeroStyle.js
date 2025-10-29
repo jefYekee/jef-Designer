@@ -103,19 +103,24 @@ export const HeroRightContainer = styled.div`
 `;
 
 export const Img = styled.img`
-  width: 100%;       /* Fill the container */
-  max-width: 700px;  /* Increase max width */
-  height: auto;
-  border-radius: 10%;
-  object-fit: cover;
+  width: 100%;       /* Fill the container */
+  max-width: 700px;  /* Original max width */
+  height: auto;
+  border-radius: 10%;
+  object-fit: cover;
 
-  @media (max-width: 960px) {
-    max-width: 600px;
-  }
+  @media (max-width: 1200px) { /* Targeting standard desktop/laptop screens */
+    // ⭐ CHANGE MADE HERE: Reduced the max-width for desktop screens
+    max-width: 500px; 
+  }
 
-  @media (max-width: 640px) {
-    max-width: 450px; /* Ensure it fits small screens */
-  }
+  @media (max-width: 960px) { /* Tablet screens */
+    max-width: 600px; /* Note: This is larger than the 500px above, check your intent */
+  }
+
+  @media (max-width: 640px) { /* Mobile screens */
+    max-width: 450px; 
+  }
 `;
 
 

@@ -14,7 +14,7 @@ import {
     ResumeButton, 
     CompanyName // Import the updated component
 } from './HeroStyle';
-import HeroImg from '../../images/hero3.png';
+import HeroImg from '../../images/newHero.png';
 import Typewriter from 'typewriter-effect';
 import { Bio } from '../../data/constants';
 
