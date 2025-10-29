@@ -187,70 +187,70 @@ export const projects = [
     // webapp: "https://hotelsantamaria-arua.com/",
   },
 
-   {
-    id: 1,
-    title: "Wallpaper Designs",
-    description:
-      "Explore a selection of thoughtfully crafted logos, each a visual representation of brand identity. Crafted using Illustrator, Figma, and Photoshop, these logos go beyond design—they embody brand values. Take a closer look at how creativity, precision, and innovation converge to shape impactful brand identities.",
-    image: require("../images/Wallpaper-2.png"),
+//    {
+//     id: 1,
+//     title: "Wallpaper Designs",
+//     description:
+//       "Explore a selection of thoughtfully crafted logos, each a visual representation of brand identity. Crafted using Illustrator, Figma, and Photoshop, these logos go beyond design—they embody brand values. Take a closer look at how creativity, precision, and innovation converge to shape impactful brand identities.",
+//     image: require("../images/Wallpaper-2.png"),
 
-    tags: [
-      "FIGMA",
-      "PHOTOSHOP",
-      "ILLUSTRATOR",
-    ],
-    category: "graphic design",
-    // webapp: "https://hotelsantamaria-arua.com/",
-  },
+//     tags: [
+//       "FIGMA",
+//       "PHOTOSHOP",
+//       "ILLUSTRATOR",
+//     ],
+//     category: "graphic design",
+//     // webapp: "https://hotelsantamaria-arua.com/",
+//   },
 
- {
-    id: 2,
-    title: "Wallpaper Designs",
-    description:
-      "Explore a selection of thoughtfully crafted logos, each a visual representation of brand identity. Crafted using Illustrator, Figma, and Photoshop, these logos go beyond design—they embody brand values. Take a closer look at how creativity, precision, and innovation converge to shape impactful brand identities.",
-    image: require("../images/Text-effect.jpg"),
+//  {
+//     id: 2,
+//     title: "Wallpaper Designs",
+//     description:
+//       "Explore a selection of thoughtfully crafted logos, each a visual representation of brand identity. Crafted using Illustrator, Figma, and Photoshop, these logos go beyond design—they embody brand values. Take a closer look at how creativity, precision, and innovation converge to shape impactful brand identities.",
+//     image: require("../images/Text-effect.jpg"),
 
-    tags: [
-      "FIGMA",
-      "PHOTOSHOP",
-      "ILLUSTRATOR",
-    ],
-    category: "graphic design",
-    // webapp: "https://hotelsantamaria-arua.com/",
-  },
+//     tags: [
+//       "FIGMA",
+//       "PHOTOSHOP",
+//       "ILLUSTRATOR",
+//     ],
+//     category: "graphic design",
+//     // webapp: "https://hotelsantamaria-arua.com/",
+//   },
 
   
- {
-    id: 3,
-    title: "Fuurniture Sale POSTER",
-    description:
-      "Explore a selection of thoughtfully crafted logos, each a visual representation of brand identity. Crafted using Illustrator, Figma, and Photoshop, these logos go beyond design—they embody brand values. Take a closer look at how creativity, precision, and innovation converge to shape impactful brand identities.",
-    image: require("../images/Sofa-sale.jpeg"),
+//  {
+//     id: 3,
+//     title: "Fuurniture Sale POSTER",
+//     description:
+//       "Explore a selection of thoughtfully crafted logos, each a visual representation of brand identity. Crafted using Illustrator, Figma, and Photoshop, these logos go beyond design—they embody brand values. Take a closer look at how creativity, precision, and innovation converge to shape impactful brand identities.",
+//     image: require("../images/Sofa-sale.jpeg"),
 
-    tags: [
-      "FIGMA",
-      "PHOTOSHOP",
-      "ILLUSTRATOR",
-    ],
-    category: "graphic design",
-    // webapp: "https://hotelsantamaria-arua.com/",
-  },
+//     tags: [
+//       "FIGMA",
+//       "PHOTOSHOP",
+//       "ILLUSTRATOR",
+//     ],
+//     category: "graphic design",
+//     // webapp: "https://hotelsantamaria-arua.com/",
+//   },
 
-    {
-    id: 4,
-    title: "Wallpaper Designs",
-    description:
-      "Explore a selection of thoughtfully crafted logos, each a visual representation of brand identity. Crafted using Illustrator, Figma, and Photoshop, these logos go beyond design—they embody brand values. Take a closer look at how creativity, precision, and innovation converge to shape impactful brand identities.",
-    image: require("../images/Desktop-Wallpaper.png"),
+//     {
+//     id: 4,
+//     title: "Wallpaper Designs",
+//     description:
+//       "Explore a selection of thoughtfully crafted logos, each a visual representation of brand identity. Crafted using Illustrator, Figma, and Photoshop, these logos go beyond design—they embody brand values. Take a closer look at how creativity, precision, and innovation converge to shape impactful brand identities.",
+//     image: require("../images/Desktop-Wallpaper.png"),
 
-    tags: [
-      "FIGMA",
-      "PHOTOSHOP",
-      "ILLUSTRATOR",
-    ],
-    category: "graphic design",
-    // webapp: "https://hotelsantamaria-arua.com/",
-  },
+//     tags: [
+//       "FIGMA",
+//       "PHOTOSHOP",
+//       "ILLUSTRATOR",
+//     ],
+//     category: "graphic design",
+//     // webapp: "https://hotelsantamaria-arua.com/",
+//   },
   
   {
     "id": 5,
