@@ -6,9 +6,9 @@ export const HeroContainer = styled.section`
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
-  top: 0;
+  padding-top: 60px;
   background: url(${({ bg }) => bg}) center/cover no-repeat;
   background-attachment: fixed;
   overflow: hidden;

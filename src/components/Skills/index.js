@@ -28,9 +28,20 @@ const Wrapper = styled.div`
 export const Title = styled.div`
   font-size: 42px;
   text-align: center;
-  font-weight: 600;
+  font-weight: 700;
   margin-top: 20px;
-  color: ${({ theme }) => theme.text_primary};
+  background: linear-gradient(90deg, #5d00ff, #1e90ff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradientMove 6s ease infinite;
+
+  @keyframes gradientMove {
+    to {
+      background-position: 200% center;
+    }
+  }
+
   @media (max-width: 768px) {
     margin-top: 12px;
     font-size: 32px;
@@ -61,10 +72,17 @@ const Skill = styled.div`
   width: 100%;
   max-width: 500px;
   background: ${({ theme }) => theme.card};
-  border: 0.1px solid #854CE6;
-  box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+  border: 1px solid #5d00ff;
+  box-shadow: 0 4px 24px rgba(30, 144, 255, 0.2);
   border-radius: 16px;
   padding: 18px 36px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 6px 30px rgba(93, 0, 255, 0.3);
+    transform: translateY(-4px);
+  }
+
   @media (max-width: 768px) {
     max-width: 400px;
     padding: 10px 36px;
@@ -93,15 +111,23 @@ const SkillList = styled.div`
 
 const SkillItem = styled.div`
   font-size: 16px;
-  font-weight: 400;
-  color: ${({ theme }) => theme.text_primary + 80};
-  border: 1px solid ${({ theme }) => theme.text_primary + 80};
+  font-weight: 500;
+  color: #1e90ff;
+  border: 1px solid #5d00ff;
   border-radius: 12px;
   padding: 12px 16px;
+  background: rgba(255, 255, 255, 0.05);
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
+  transition: all 0.3s ease-in-out;
+
+  &:hover {
+    background: rgba(93, 0, 255, 0.1);
+    transform: scale(1.05);
+  }
+
   @media (max-width: 768px) {
     font-size: 14px;
     padding: 8px 12px;
