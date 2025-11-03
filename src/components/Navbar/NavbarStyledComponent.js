@@ -3,44 +3,48 @@ import styled from 'styled-components';
 
 // src/components/Navbar/NavbarStyledComponent.js
 
-export const Nav = styled.div`
-    height: 60px; /* shorter for a cleaner, premium look */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1rem;
-    position: sticky;
-    top: 0;
-    width: 95%;
-    margin: 10px auto;
-    border-radius: 14px;
-    padding: 0 10px;
-    
-    /* Glassmorphism base */
-    background: rgba(15, 15, 25, 0.55);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    
-    /* Subtle blue glow for style */
-    box-shadow: 0 4px 25px rgba(0, 80, 255, 0.2), 0 0 15px rgba(0, 100, 255, 0.15);
-    
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    z-index: 999;
-    transition: all 0.4s ease-in-out;
+export const Nav = styled.nav`
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  position: fixed; /* Changed from sticky */
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+  border-radius: 14px;
+  padding: 0 10px;
+  margin: 0; /* Remove any vertical spacing */
 
-    @media (max-width: 960px) {
-        width: 90%;
-        height: 55px;
-        border-radius: 12px;
-    }
+  /* Glassmorphism effect */
+  background: rgba(15, 15, 25, 0.45); /* slightly more transparent */
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
 
-    @media (max-width: 600px) {
-        width: 94%;
-        height: 50px;
-        border-radius: 10px;
-        box-shadow: 0 2px 15px rgba(0, 80, 255, 0.25);
-    }
+  /* Subtle glowing border */
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 25px rgba(0, 80, 255, 0.15), 
+              0 0 12px rgba(0, 100, 255, 0.12);
+
+  z-index: 999;
+  transition: all 0.4s ease-in-out;
+
+  @media (max-width: 960px) {
+    width: 92%;
+    height: 55px;
+    border-radius: 12px;
+  }
+
+  @media (max-width: 600px) {
+    width: 94%;
+    height: 50px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 80, 255, 0.25);
+  }
 `;
+
 
 
 export const NavbarContainer = styled.div`

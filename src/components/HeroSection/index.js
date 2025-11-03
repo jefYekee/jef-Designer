@@ -1,65 +1,38 @@
 import React from 'react';
-import HeroBgAnimation from '../HeroBgAnimation';
-import { 
-    HeroContainer, 
-    HeroBg, 
-    HeroLeftContainer, 
-    Img, 
-    HeroRightContainer, 
-    HeroInnerContainer, 
-    TextLoop, 
-    Title, 
-    Span, 
-    SubTitle, 
-    ResumeButton, 
-    CompanyName // Import the updated component
-} from './HeroStyle';
-import HeroImg from '../../images/newHero.png';
 import Typewriter from 'typewriter-effect';
 import { Bio } from '../../data/constants';
+import {
+  HeroContainer,
+  HeroContent,
+  CompanyName,
+  TextLoop,
+  SubTitle,
+  WorkButton
+} from './HeroStyle';
+import HeroImg from '../../images/main-wallpaper.png';
 
 const HeroSection = () => {
-    return (
-        <div id="hero">
-            <HeroContainer>
-                <HeroBg>
-                    <HeroBgAnimation />
-                </HeroBg>
-                <HeroInnerContainer>
-                    <HeroLeftContainer id="Left">
-                        <Title>
-                            <CompanyName>{Bio.name}_designer</CompanyName> {/* Updated usage */}
-                        </Title>
-                        <TextLoop>
-                            <Span>
-                                <Typewriter
-                                    options={{
-                                        strings: Bio.roles,
-                                        autoStart: true,
-                                        loop: true,
-                                    }}
-                                />
-                            </Span>
-                        </TextLoop>
-                        {/* Use dangerouslySetInnerHTML to render HTML from description */}
-                        <SubTitle dangerouslySetInnerHTML={{ __html: Bio.description }} />
-                        {/* <ResumeButton 
-                            // href={Bio.resume} 
-                            href='#projects'
-                            target="_blank" 
-                            rel="noopener noreferrer"
-                        >
-                            View Our Work
-                        </ResumeButton> */}
-                    </HeroLeftContainer>
+  return (
+    <HeroContainer bg={HeroImg} id="hero">
+      <HeroContent>
+        <CompanyName>{Bio.name}_designer</CompanyName>
 
-                    <HeroRightContainer id="Right">
-                        <Img src={HeroImg} alt="Branding and Design Services" />
-                    </HeroRightContainer>
-                </HeroInnerContainer>
-            </HeroContainer>
-        </div>
-    );
-}
+        <TextLoop>
+          <Typewriter
+            options={{
+              strings: Bio.roles,
+              autoStart: true,
+              loop: true,
+            }}
+          />
+        </TextLoop>
+
+        <SubTitle dangerouslySetInnerHTML={{ __html: Bio.description }} />
+
+        <WorkButton href="#projects">View Our Work</WorkButton>
+      </HeroContent>
+    </HeroContainer>
+  );
+};
 
 export default HeroSection;
