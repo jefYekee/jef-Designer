@@ -1,6 +1,6 @@
 
 export const Bio = {
-  name: "Jef", // User's name
+  name: "Jef",
   roles: [
     "UI/UX Designer",
     "Graphic Designer",
@@ -8,23 +8,18 @@ export const Bio = {
     "Brand Identity Creator"
   ],
   description: `
-<p>
-    I am a <strong>UI/UX Designer</strong> and <strong>Front-End Developer</strong> focused on creating <strong>intuitive, engaging, and technically robust</strong> digital experiences.
-</p>
-<p>
-  I manage the complete <strong>IDEA &rarr; PLAN &rarr; DESIGN &rarr; DEVELOP</strong> process, integrating interface design with graphic design and development.
-</p>
-<p>
-    My toolkit includes 
-    <span style="color: #66ff33; font-weight: 600;">Figma</span>, 
-    <span style="color: #66ff33; font-weight: 600;">Adobe tools</span>, 
-    <span style="color: #66ff33; font-weight: 600;">HTML/CSS/JavaScript</span>, 
-    <span style="color: #66ff33; font-weight: 600;">React</span>, and 
-    <span style="color: #66ff33; font-weight: 600;">Node.js</span>. 
-    I deliver <strong>end-to-end solutions</strong> that turn great concepts into flawless code.
-</p>
+  <p>
+    I’m a 
+    <strong style="color: #00c6ff;">UI/UX Designer</strong> and 
+    <strong style="color: #66ff33;">Front-End Developer</strong> passionate about creating 
+    <strong>intuitive, engaging, and technically solid</strong> digital experiences.
+  </p>
+  <p>
+    I handle the full journey — <strong>IDEA → DESIGN → DEVELOP</strong> — blending creative design with clean, efficient code.
+  </p>
   `,
 };
+
 
 export const skills = [
   {
