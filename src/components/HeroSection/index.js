@@ -15,7 +15,7 @@ const HeroSection = () => {
   return (
     <HeroContainer bg={HeroImg} id="hero">
       <HeroContent>
-        <CompanyName>{Bio.name}_designer</CompanyName>
+        {/* <CompanyName>{Bio.name}_designer</CompanyName> */}
 
         <TextLoop>
           <Typewriter
@@ -29,7 +29,7 @@ const HeroSection = () => {
 
         <SubTitle dangerouslySetInnerHTML={{ __html: Bio.description }} />
 
-        <WorkButton href="#projects">View Our Work</WorkButton>
+        <WorkButton href="#projects">View My Work</WorkButton>
       </HeroContent>
     </HeroContainer>
   );

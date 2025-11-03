@@ -137,7 +137,6 @@ export const MobileHireButton = styled.a`
   font-size: 16px;
   text-decoration: none;
   width: max-content;
-  border: 1.8px solid #0C0763;
   transition: all 0.3s ease-in-out;
 
   :hover {

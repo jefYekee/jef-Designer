@@ -1,4 +1,3 @@
-
 export const Bio = {
   name: "Jef",
   roles: [
@@ -10,8 +9,9 @@ export const Bio = {
   description: `
   <p>
     I’m a 
-    <strong style="color: #00c6ff;">UI/UX Designer</strong> and 
-    <strong style="color: #66ff33;">Front-End Developer</strong> passionate about creating 
+    <strong style="color: #00c6ff;">UI/UX Designer</strong>, 
+    <strong style="color: #66ff33;">Front-End Developer</strong>, and 
+    <strong style="color: #ff6b00;">Graphic Designer</strong> passionate about creating 
     <strong>intuitive, engaging, and technically solid</strong> digital experiences.
   </p>
   <p>
