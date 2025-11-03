@@ -2,16 +2,16 @@ export const Bio = {
   name: "Jef",
   roles: [
     "UI/UX Designer",
-    "Graphic Designer",
-    "Web & Mobile App Developer",
-    "Brand Identity Creator"
+    "Front-End Developer",
+    "Graphic & Brand Designer",
+    "Creative Problem Solver"
   ],
   description: `
   <p>
     I’m a 
     <strong style="color: #00c6ff;">UI/UX Designer</strong>, 
     <strong style="color: #66ff33;">Front-End Developer</strong>, and 
-    <strong style="color: #ff6b00;">Graphic Designer</strong> passionate about creating 
+    <strong style="color: #ff6b00;">Graphic & Brand Designer</strong> passionate about creating 
     <strong>intuitive, engaging, and technically solid</strong> digital experiences.
   </p>
   <p>
@@ -21,42 +21,30 @@ export const Bio = {
 };
 
 
+
 export const skills = [
   {
-    title: "Design Tools",
+    title: "Design & Branding Tools",
     skills: [
-      {
-        name: "Adobe Photoshop",
-        image: require("../images/Adobe-Photoshop.png"),
-      },
-      
-      {
-        name: "Adobe Illustrator",
-        image: require("../images/Illustrator.png"),
-      },
-      {
-        name: "Adobe Lightroom",
-        image: require("../images/Lightroom.png"),
-      },
-      {
-        name: "Figma",
-        image: require("../images/figma.png"),
-      },
-      {
-        name: "Next Js",
-        image: require("../images/nextjs.jpg"),
-      },
-      {
-        name: "React Js",
-        image: require("../images/react.png"),
-      },
-      {
-        name: "Html",
-        image: require("../images/html5.png"),
-      },
+      { name: "Adobe Photoshop", image: require("../images/Adobe-Photoshop.png") },
+      { name: "Adobe Illustrator", image: require("../images/Illustrator.png") },
+      { name: "Figma", image: require("../images/figma.png") },
+    ],
+  },
+  {
+    title: "Front-End Development",
+    skills: [
+      { name: "React Js", image: require("../images/react.png") },
+      { name: "Next Js", image: require("../images/nextjs.jpg") },
+      { name: "HTML5", image: require("../images/html5.png") },
+      // Optional but recommended additions for balance:
+      // { name: "CSS3", image: require("../images/css3.png") },
+      // { name: "JavaScript", image: require("../images/javascript.png") },
+      // { name: "Tailwind CSS", image: require("../images/tailwind.png") },
     ],
   },
 ];
+
 
 
 

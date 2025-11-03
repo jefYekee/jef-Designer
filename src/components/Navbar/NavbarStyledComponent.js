@@ -111,19 +111,24 @@ export const NavItems = styled.ul`
     }
 `;
 
-
 export const NavLink = styled.a`
-    // Navigation link color (Dark Indigo)
-    color: #0C0763; 
-    font-weight: 500;
-    cursor: pointer;
-    transition: all 0.2s ease-in-out;
-    text-decoration: none;
-    
-    :hover {
-        color: #FFFFFF; // White text on hover
-    }
+  color: #ffffff; /* Brighter text for visibility */
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  
+  /* Add glow or shadow for visibility on any background */
+  text-shadow: 0 0 6px rgba(0, 0, 0, 0.4),
+               0 0 10px rgba(30, 144, 255, 0.25);
+
+  :hover {
+    color: #1e90ff;
+    text-shadow: 0 0 8px rgba(30, 144, 255, 0.6);
+  }
 `;
+
 
 export const MobileHireButton = styled.a`
   display: flex;
