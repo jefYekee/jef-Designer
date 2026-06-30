@@ -389,7 +389,7 @@ const About = () => {
 
           <StatRow>
             <Stat>
-              <StatNum>3<span>+</span></StatNum>
+              <StatNum>5<span>+</span></StatNum>
               <StatLabel>Years Exp</StatLabel>
             </Stat>
             <Stat>
