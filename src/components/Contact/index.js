@@ -1,178 +1,135 @@
-import React from 'react'
-import styled from 'styled-components'
-import { useRef } from 'react';
-import emailjs from '@emailjs/browser';
-import { Snackbar } from '@mui/material';
-
-const Container = styled.div`
-display: flex;
-flex-direction: column;
-justify-content: center;
-position: relative;
-z-index: 1;
-align-items: center;
-@media (max-width: 960px) {
-    padding: 0px;
-}
-`
-
-const Wrapper = styled.div`
-position: relative;
-display: flex;
-justify-content: space-between;
-align-items: center;
-flex-direction: column;
-width: 100%;
-max-width: 1350px;
-padding: 0px 0px 80px 0px;
-gap: 12px;
-@media (max-width: 960px) {
-    flex-direction: column;
-}
-`
-
-const Title = styled.div`
-font-size: 42px;
-text-align: center;
-font-weight: 600;
-margin-top: 20px;
-  color: ${({ theme }) => theme.text_primary};
-  @media (max-width: 768px) {
-      margin-top: 12px;
-      font-size: 32px;
-  }
-`;
-
-const Desc = styled.div`
-    font-size: 18px;
-    text-align: center;
-    max-width: 600px;
-    color: ${({ theme }) => theme.text_secondary};
-    @media (max-width: 768px) {
-        margin-top: 12px;
-        font-size: 16px;
-    }
-`;
-
-
-const ContactForm = styled.form`
-  width: 95%;
-  max-width: 600px;
-  display: flex;
-  flex-direction: column;
-  background-color: ${({ theme }) => theme.card};
-  padding: 32px;
-  border-radius: 16px;
-  box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
-  margin-top: 28px;
-  gap: 12px;
-`
-
-const ContactTitle = styled.div`
-  font-size: 24px;
-  margin-bottom: 6px;
-  font-weight: 600;
-  color: ${({ theme }) => theme.text_primary};
-`
-
-const ContactInput = styled.input`
-  flex: 1;
-  background-color: transparent;
-  border: 1px solid ${({ theme }) => theme.text_secondary};
-  outline: none;
-  font-size: 18px;
-  color: ${({ theme }) => theme.text_primary};
-  border-radius: 12px;
-  padding: 12px 16px;
-  &:focus {
-    border: 1px solid ${({ theme }) => theme.primary};
-  }
-`
-
-const ContactInputMessage = styled.textarea`
-  flex: 1;
-  background-color: transparent;
-  border: 1px solid ${({ theme }) => theme.text_secondary};
-  outline: none;
-  font-size: 18px;
-  color: ${({ theme }) => theme.text_primary};
-  border-radius: 12px;
-  padding: 12px 16px;
-  &:focus {
-    border: 1px solid ${({ theme }) => theme.primary};
-  }
-`
-
-const ContactButton = styled.input`
-  width: 100%;
-  text-decoration: none;
-  text-align: center;
-  background: hsla(271, 100%, 50%, 1);
-  background: linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-  background: -moz-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-  background: -webkit-linear-gradient(225deg, hsla(271, 100%, 50%, 1) 0%, hsla(294, 100%, 50%, 1) 100%);
-  padding: 13px 16px;
-  margin-top: 2px;
-  border-radius: 12px;
-  border: none;
-  color: ${({ theme }) => theme.text_primary};
-  font-size: 18px;
-  font-weight: 600;
-`
-
-
+import React, { useRef, useState } from 'react'
+import emailjs from '@emailjs/browser'
+import { Snackbar, Alert } from '@mui/material'
+import {
+  Container,
+  GlowLeft,
+  GlowRight,
+  GridLines,
+  Wrapper,
+  Badge,
+  DotPulse,
+  Title,
+  Desc,
+  Inner,
+  InfoSide,
+  InfoHeading,
+  InfoText,
+  InfoList,
+  InfoItem,
+  InfoIconWrap,
+  InfoLabel,
+  InfoValue,
+  ContactForm,
+  ContactTitle,
+  InputRow,
+  ContactInput,
+  ContactInputMessage,
+  ContactButton,
+} from './ContactStyle'
 
 const Contact = () => {
+  const [open, setOpen] = useState(false)
+  const [status, setStatus] = useState('success')
+  const [sending, setSending] = useState(false)
+  const form = useRef()
 
-  //hooks
-  const [open, setOpen] = React.useState(false);
-  const form = useRef();
-
-  const resetForm = () => {
-    form.current.reset();
-  };
+  const resetForm = () => form.current.reset()
 
   const handleSubmit = (e) => {
-    e.preventDefault();
-    emailjs.sendForm('service_np7yap3', 'template_38b2od8', form.current, '4jPxT8KA9ZrQMmYu2')
-    .then((result) => {
-        console.log(result.text);
-        alert("Message Sent Successfully")
-        resetForm();
-    }, (error) => {
-        console.log(error.text);
-        alert("Something BAD happened")
-
-    });
+    e.preventDefault()
+    setSending(true)
+    emailjs
+      .sendForm('service_np7yap3', 'template_38b2od8', form.current, '4jPxT8KA9ZrQMmYu2')
+      .then(() => {
+        setStatus('success')
+        setOpen(true)
+        resetForm()
+        setSending(false)
+      })
+      .catch(() => {
+        setStatus('error')
+        setOpen(true)
+        setSending(false)
+      })
   }
-
-
 
   return (
     <Container id="contact">
+      <GridLines />
+      <GlowLeft />
+      <GlowRight />
+
       <Wrapper>
-        <Title>Contact</Title>
-        <Desc>Feel free to reach out to me for any questions or opportunities!</Desc>
-        <ContactForm ref={form} onSubmit={handleSubmit}>
-          <ContactTitle>Email Me 🚀</ContactTitle>
-          <ContactInput placeholder="Your Email" type="email" name="user_email" required />
-          <ContactInput placeholder="Your Name" type="text" name="user_name" required/>
-          <ContactInput placeholder="Subject" type="text" name="subject" required/>
-          <ContactInputMessage placeholder="Message" type="text" rows="4" name="message" required/>
-          <ContactButton type="submit"  value="Send" />
-        </ContactForm>
-        <Snackbar
-          open={open}
-          autoHideDuration={3000}
-          onClose={()=>setOpen(false)}
-          message="Email sent successfully!"
-          severity="success"
-        />
+        <Badge><DotPulse /> Let's Connect</Badge>
+        <Title>Let's Build <span>Something Great</span></Title>
+        <Desc>
+          Have a project in mind or just want to say hi? My inbox is always open.
+        </Desc>
+
+        <Inner>
+          <InfoSide>
+            <InfoHeading>Get In Touch</InfoHeading>
+            <InfoText>
+              Whether it's a full product build, a brand refresh, or just an idea
+              you want to talk through — I'd love to hear about it.
+            </InfoText>
+
+            <InfoList>
+              <InfoItem>
+                <InfoIconWrap>📧</InfoIconWrap>
+                <div>
+                  <InfoLabel>Email</InfoLabel>
+                  <InfoValue>jefyekee@gmail.com</InfoValue>
+                </div>
+              </InfoItem>
+              <InfoItem>
+                <InfoIconWrap>📍</InfoIconWrap>
+                <div>
+                  <InfoLabel>Location</InfoLabel>
+                  <InfoValue>Kampala, Uganda</InfoValue>
+                </div>
+              </InfoItem>
+              <InfoItem>
+                <InfoIconWrap>⚡</InfoIconWrap>
+                <div>
+                  <InfoLabel>Availability</InfoLabel>
+                  <InfoValue>Open to new projects</InfoValue>
+                </div>
+              </InfoItem>
+            </InfoList>
+          </InfoSide>
+
+          <ContactForm ref={form} onSubmit={handleSubmit}>
+            <ContactTitle>Send a Message</ContactTitle>
+
+            <InputRow>
+              <ContactInput placeholder="Your Name" type="text" name="user_name" required />
+              <ContactInput placeholder="Your Email" type="email" name="user_email" required />
+            </InputRow>
+
+            <ContactInput placeholder="Subject" type="text" name="subject" required />
+            <ContactInputMessage placeholder="Your message..." rows="5" name="message" required />
+
+            <ContactButton type="submit" disabled={sending}>
+              {sending ? 'Sending...' : 'Send Message ↗'}
+            </ContactButton>
+          </ContactForm>
+        </Inner>
       </Wrapper>
+
+      <Snackbar
+        open={open}
+        autoHideDuration={4000}
+        onClose={() => setOpen(false)}
+        anchorOrigin={{ vertical: 'bottom', horizontal: 'center' }}
+      >
+        <Alert severity={status} variant="filled" onClose={() => setOpen(false)}>
+          {status === 'success' ? 'Message sent successfully!' : 'Something went wrong. Please try again.'}
+        </Alert>
+      </Snackbar>
     </Container>
   )
 }
-
-
 
 export default Contact

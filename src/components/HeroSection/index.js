@@ -3,12 +3,12 @@ import { Bio } from '../../data/constants';
 import {
   HeroContainer,
   HeroContent,
-  AvailabilityBadge,
+  Badge,
   DotPulse,
-  HeroName,
+  HeroHeadline,
+  Word,
   TypewriterWrap,
   Cursor,
-  SubTitle,
   HeroCTA,
   WorkButton,
   ContactButton,
@@ -18,7 +18,6 @@ import {
   StatLabel,
   GridLines,
   GlowOrb,
-  GlowOrbRight,
 } from './HeroStyle';
 
 const HeroSection = () => {
@@ -38,13 +37,13 @@ const HeroSection = () => {
     resize();
     window.addEventListener('resize', resize);
 
-    const dots = Array.from({ length: 55 }, () => ({
+    const dots = Array.from({ length: 45 }, () => ({
       x: Math.random() * canvas.width,
       y: Math.random() * canvas.height,
       r: Math.random() * 1.5 + 0.5,
-      vx: (Math.random() - 0.5) * 0.35,
-      vy: (Math.random() - 0.5) * 0.35,
-      alpha: Math.random() * 0.5 + 0.2,
+      vx: (Math.random() - 0.5) * 0.3,
+      vy: (Math.random() - 0.5) * 0.3,
+      alpha: Math.random() * 0.4 + 0.15,
     }));
 
     let animId;
@@ -73,7 +72,7 @@ const HeroSection = () => {
             ctx.beginPath();
             ctx.moveTo(dots[i].x, dots[i].y);
             ctx.lineTo(dots[j].x, dots[j].y);
-            ctx.strokeStyle = `rgba(0, 199, 239, ${0.12 * (1 - dist / 90)})`;
+            ctx.strokeStyle = `rgba(0, 199, 239, ${0.1 * (1 - dist / 90)})`;
             ctx.lineWidth = 0.5;
             ctx.stroke();
           }
@@ -128,25 +127,26 @@ const HeroSection = () => {
       <canvas ref={canvasRef} style={{ position: 'absolute', inset: 0, zIndex: 0 }} />
       <GridLines />
       <GlowOrb />
-      <GlowOrbRight />
 
       <HeroContent>
-        <AvailabilityBadge>
+        <Badge>
           <DotPulse />
-          Open to new projects
-        </AvailabilityBadge>
+          Front-End Dev &amp; Brand Designer
+        </Badge>
 
-        <HeroName>
-          Crafting digital experiences<br />
-          that <span className="accent">matter</span>
-        </HeroName>
+        <HeroHeadline>
+          <Word delay="0s">I solve</Word>{' '}
+          <Word delay="0.12s" className="outline">business</Word>
+          <br />
+          <Word delay="0.24s">problems with</Word>
+          <br />
+          <Word delay="0.36s" className="accent-fill">design &amp; code</Word>
+        </HeroHeadline>
 
         <TypewriterWrap>
           <span ref={twRef} />
           <Cursor />
         </TypewriterWrap>
-
-        <SubTitle dangerouslySetInnerHTML={{ __html: Bio.description }} />
 
         <HeroCTA>
           <WorkButton href="#projects">View My Work ↗</WorkButton>
@@ -155,7 +155,7 @@ const HeroSection = () => {
 
         <StatRow>
           <Stat>
-            <StatNum>3<span>+</span></StatNum>
+            <StatNum>5<span>+</span></StatNum>
             <StatLabel>Years exp</StatLabel>
           </Stat>
           <Stat>

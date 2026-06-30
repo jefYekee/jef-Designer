@@ -1,23 +1,33 @@
 export const darkTheme = {
-    bg:"#1C1C27",
-    bgLight: "#1C1E27",
-    primary:"#854CE6",
-    text_primary:"#F2F3F4",
-    text_secondary:"#b1b2b3",
-    card:"#171721",
-    card_light: '#191924',
-    button:"#854CE6",
-    white:"#FFFFFF",
-    skyblue: "#00bfff",
-    black:"#000000",
+  bg: "#0a0a1a",
+  bgLight: "#0d0d2b",
+  primary: "#00C7EF",
+  secondary: "#5d00ff",
+
+  text_primary: "#FFFFFF",
+  text_secondary: "rgba(255,255,255,0.65)",
+
+  card: "rgba(255,255,255,0.04)",
+  card_border: "rgba(255,255,255,0.08)",
+  card_hover_border: "rgba(0,199,239,0.35)",
+
+  white: "#FFFFFF",
+  black: "#0a0a1a",
 }
 
 export const lightTheme = {
-    bg:"#FFFFFF",
-    bgLight: "#f0f0f0",
-    primary:"#be1adb",
-    text_primary:"#111111",
-    text_secondary:"#48494a",
-    card:"#FFFFFF",
-    button:"#5c5b5b",
+  bg: "#f0f4ff",
+  bgLight: "#ffffff",
+  primary: "#00C7EF",
+  secondary: "#5d00ff",
+
+  text_primary: "#0a0a1a",
+  text_secondary: "rgba(10,10,26,0.65)",
+
+  card: "#ffffff",
+  card_border: "rgba(0,0,0,0.08)",
+  card_hover_border: "rgba(0,199,239,0.5)",
+
+  white: "#FFFFFF",
+  black: "#0a0a1a",
 }

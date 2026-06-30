@@ -2,18 +2,9 @@ import styled, { keyframes } from 'styled-components';
 
 // ── Keyframes ──────────────────────────────────────────────────────────────
 
-const fadeSlideDown = keyframes`
-  from { opacity: 0; transform: translateY(-12px); }
-  to   { opacity: 1; transform: translateY(0); }
-`;
-
 const fadeSlideUp = keyframes`
-  from { opacity: 0; transform: translateY(18px); }
+  from { opacity: 0; transform: translateY(20px); }
   to   { opacity: 1; transform: translateY(0); }
-`;
-
-const gradientShift = keyframes`
-  to { background-position: 200% center; }
 `;
 
 const pulse = keyframes`
@@ -34,10 +25,14 @@ export const HeroContainer = styled.section`
   justify-content: center;
   text-align: center;
   min-height: 100vh;
-  padding-top: 60px;
+  padding: 140px 80px 80px;
   background: linear-gradient(135deg, #0a0a1a 0%, #0d0d2b 50%, #0a1628 100%);
   overflow: hidden;
   font-family: 'Poppins', sans-serif;
+
+  @media (max-width: 768px) {
+    padding: 120px 24px 60px;
+  }
 `;
 
 export const GridLines = styled.div`
@@ -55,23 +50,10 @@ export const GlowOrb = styled.div`
   width: 400px;
   height: 400px;
   border-radius: 50%;
-  background: rgba(93, 0, 255, 0.18);
-  filter: blur(90px);
+  background: rgba(93, 0, 255, 0.16);
+  filter: blur(110px);
   top: -100px;
-  left: -100px;
-  z-index: 0;
-  pointer-events: none;
-`;
-
-export const GlowOrbRight = styled.div`
-  position: absolute;
-  width: 350px;
-  height: 350px;
-  border-radius: 50%;
-  background: rgba(0, 199, 239, 0.12);
-  filter: blur(90px);
-  bottom: -80px;
-  right: -80px;
+  right: -60px;
   z-index: 0;
   pointer-events: none;
 `;
@@ -79,79 +61,108 @@ export const GlowOrbRight = styled.div`
 export const HeroContent = styled.div`
   position: relative;
   z-index: 2;
-  max-width: 780px;
-  padding: 2rem 1.5rem;
+  max-width: 800px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1.1rem;
 `;
 
 // ── Badge ──────────────────────────────────────────────────────────────────
 
-export const AvailabilityBadge = styled.div`
+export const Badge = styled.div`
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: rgba(0, 199, 239, 0.08);
-  border: 1px solid rgba(0, 199, 239, 0.25);
+  border: 1px solid rgba(0, 199, 239, 0.3);
   border-radius: 50px;
   padding: 6px 18px;
   font-size: 0.75rem;
   color: #00C7EF;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.07em;
   text-transform: uppercase;
   font-weight: 600;
-  animation: ${fadeSlideDown} 0.6s ease forwards;
+  width: fit-content;
+  margin: 0 auto 28px;
+  animation: ${fadeSlideUp} 0.6s ease forwards;
 `;
 
 export const DotPulse = styled.span`
-  display: inline-block;
-  width: 7px;
-  height: 7px;
+  width: 6px;
+  height: 6px;
   background: #00C7EF;
   border-radius: 50%;
   animation: ${pulse} 1.8s ease-in-out infinite;
 `;
 
-// ── Heading ────────────────────────────────────────────────────────────────
+// ── Headline ───────────────────────────────────────────────────────────────
 
-export const HeroName = styled.h1`
-  font-size: 3.2rem;
-  font-weight: 800;
-  color: #fff;
+export const HeroHeadline = styled.h1`
+  font-size: 5rem;
+  font-weight: 900;
   line-height: 1.15;
   letter-spacing: -0.02em;
-  animation: ${fadeSlideUp} 0.7s ease 0.1s both;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
 
-  .accent {
-    background: linear-gradient(90deg, #00C7EF, #5d00ff, #00C7EF);
-    background-size: 200% auto;
+  @media (max-width: 768px) {
+    font-size: 2.6rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 2rem;
+  }
+`;
+
+const wordFadeUp = keyframes`
+  from { opacity: 0; transform: translateY(30px); }
+  to   { opacity: 1; transform: translateY(0); }
+`;
+
+export const Word = styled.span`
+  display: inline-block;
+  opacity: 0;
+  animation: ${wordFadeUp} 0.6s ease forwards;
+  animation-delay: ${({ delay }) => delay || '0s'};
+  transition: color 0.35s ease, -webkit-text-stroke-color 0.35s ease, filter 0.35s ease;
+  cursor: default;
+
+  &.outline {
+    color: transparent;
+    -webkit-text-stroke: 2px #00C7EF;
+    -webkit-text-fill-color: transparent;
+
+    &:hover {
+      -webkit-text-fill-color: #00C7EF;
+      color: #00C7EF;
+      filter: drop-shadow(0 0 18px rgba(0, 199, 239, 0.6));
+    }
+  }
+
+  &.accent-fill {
+    background: linear-gradient(90deg, #00C7EF, #5d00ff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
-    animation: ${gradientShift} 4s linear infinite;
-  }
-
-  @media (max-width: 768px) {
-    font-size: 2.2rem;
   }
 `;
 
 // ── Typewriter ─────────────────────────────────────────────────────────────
 
 export const TypewriterWrap = styled.div`
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 600;
-  color: rgba(255, 255, 255, 0.7);
-  min-height: 2rem;
+  color: rgba(255, 255, 255, 0.55);
+  min-height: 1.8rem;
   display: flex;
   align-items: center;
   gap: 2px;
+  margin-top: 22px;
   animation: ${fadeSlideUp} 0.7s ease 0.2s both;
 
   @media (max-width: 768px) {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 `;
 
@@ -160,33 +171,18 @@ export const Cursor = styled.span`
   width: 2px;
   height: 1.1em;
   background: #00C7EF;
-  vertical-align: middle;
   animation: ${blink} 1s step-end infinite;
-`;
-
-// ── Description ────────────────────────────────────────────────────────────
-
-export const SubTitle = styled.p`
-  font-size: 1rem;
-  line-height: 1.8;
-  color: rgba(255, 255, 255, 0.5);
-  max-width: 600px;
-  animation: ${fadeSlideUp} 0.7s ease 0.3s both;
-
-  @media (max-width: 640px) {
-    font-size: 0.9rem;
-  }
 `;
 
 // ── Buttons ────────────────────────────────────────────────────────────────
 
 export const HeroCTA = styled.div`
   display: flex;
-  gap: 12px;
+  gap: 14px;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 0.5rem;
-  animation: ${fadeSlideUp} 0.7s ease 0.4s both;
+  margin-top: 38px;
+  animation: ${fadeSlideUp} 0.7s ease 0.3s both;
 `;
 
 export const WorkButton = styled.a`
@@ -195,22 +191,22 @@ export const WorkButton = styled.a`
   gap: 8px;
   background: linear-gradient(135deg, #00C7EF, #5d00ff);
   color: #fff;
-  padding: 13px 34px;
+  padding: 15px 36px;
   border-radius: 50px;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 0.95rem;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
-  box-shadow: 0 0 28px rgba(0, 199, 239, 0.25);
+  box-shadow: 0 0 30px rgba(0, 199, 239, 0.3);
 
   &:hover {
     transform: translateY(-3px) scale(1.04);
-    box-shadow: 0 0 40px rgba(0, 199, 239, 0.45);
+    box-shadow: 0 0 44px rgba(0, 199, 239, 0.5);
   }
 
   @media (max-width: 480px) {
-    padding: 11px 26px;
-    font-size: 0.9rem;
+    padding: 12px 28px;
+    font-size: 0.88rem;
   }
 `;
 
@@ -219,24 +215,24 @@ export const ContactButton = styled.a`
   align-items: center;
   gap: 8px;
   background: transparent;
-  color: rgba(255, 255, 255, 0.8);
-  padding: 13px 34px;
+  color: rgba(255, 255, 255, 0.85);
+  padding: 15px 36px;
   border-radius: 50px;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 0.95rem;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.2);
   transition: all 0.25s ease;
 
   &:hover {
     background: rgba(255, 255, 255, 0.07);
-    border-color: rgba(255, 255, 255, 0.35);
+    border-color: rgba(255, 255, 255, 0.4);
     transform: translateY(-3px);
   }
 
   @media (max-width: 480px) {
-    padding: 11px 26px;
-    font-size: 0.9rem;
+    padding: 12px 28px;
+    font-size: 0.88rem;
   }
 `;
 
@@ -245,10 +241,11 @@ export const ContactButton = styled.a`
 export const StatRow = styled.div`
   display: flex;
   gap: 2.5rem;
-  margin-top: 1rem;
-  padding-top: 1.2rem;
+  margin: 50px auto 0;
+  padding-top: 22px;
   border-top: 1px solid rgba(255, 255, 255, 0.07);
-  animation: ${fadeSlideUp} 0.7s ease 0.5s both;
+  width: fit-content;
+  animation: ${fadeSlideUp} 0.7s ease 0.4s both;
 
   @media (max-width: 480px) {
     gap: 1.5rem;
@@ -260,7 +257,7 @@ export const Stat = styled.div`
 `;
 
 export const StatNum = styled.div`
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   font-weight: 800;
   color: #fff;
 
@@ -274,5 +271,5 @@ export const StatLabel = styled.div`
   color: rgba(255, 255, 255, 0.4);
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  margin-top: 3px;
+  margin-top: 2px;
 `;

@@ -22,29 +22,64 @@ export const Bio = {
 
 
 
+// export const skills = [
+//   {
+//     title: "Design & Branding Tools",
+//     skills: [
+//       { name: "Adobe Photoshop", image: require("../images/Adobe-Photoshop.png") },
+//       { name: "Adobe Illustrator", image: require("../images/Illustrator.png") },
+//       { name: "Figma", image: require("../images/figma.png") },
+//     ],
+//   },
+//   {
+//     title: "Front-End Development",
+//     skills: [
+//       { name: "React Js", image: require("../images/react.png") },
+//       { name: "Next Js", image: require("../images/nextjs.jpg") },
+//       { name: "HTML5", image: require("../images/html5.png") },
+  
+//     ],
+//   },
+// ];
+
+
+// Replace the existing `skills` export in src/data/constants.js with this.
+// All images use CDN-hosted icons (Simple Icons via jsdelivr) so it works immediately.
+// Swap any `image` value for a local require("../images/...") later if you prefer.
+
 export const skills = [
   {
-    title: "Design & Branding Tools",
+    title: "Design & Branding",
     skills: [
-      { name: "Adobe Photoshop", image: require("../images/Adobe-Photoshop.png") },
-      { name: "Adobe Illustrator", image: require("../images/Illustrator.png") },
-      { name: "Figma", image: require("../images/figma.png") },
+      { name: "Figma", image: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/figma.svg" },
+      { name: "Adobe Photoshop", image: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/adobephotoshop.svg" },
+      { name: "Adobe Illustrator", image: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/adobeillustrator.svg" },
+      { name: "Adobe XD", image: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/adobexd.svg" },
     ],
   },
   {
     title: "Front-End Development",
     skills: [
-      { name: "React Js", image: require("../images/react.png") },
-      { name: "Next Js", image: require("../images/nextjs.jpg") },
-      { name: "HTML5", image: require("../images/html5.png") },
-      // Optional but recommended additions for balance:
-      // { name: "CSS3", image: require("../images/css3.png") },
-      // { name: "JavaScript", image: require("../images/javascript.png") },
-      // { name: "Tailwind CSS", image: require("../images/tailwind.png") },
+      { name: "React Js", image: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/react.svg" },
+      { name: "Next Js", image: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/nextdotjs.svg" },
+      { name: "JavaScript", image: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/javascript.svg" },
+      { name: "HTML5", image: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/html5.svg" },
+      { name: "CSS3", image: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/css3.svg" },
+      { name: "Tailwind CSS", image: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/tailwindcss.svg" },
+    ],
+  },
+  {
+    title: "Tools & Workflow",
+    skills: [
+      { name: "Git", image: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/git.svg" },
+      { name: "GitHub", image: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" },
+      { name: "VS Code", image: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/visualstudiocode.svg" },
+      { name: "Styled Components", image: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/styledcomponents.svg" },
+      { name: "Framer Motion", image: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/framer.svg" },
+      { name: "Vercel", image: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/vercel.svg" },
     ],
   },
 ];
-
 
 
 
@@ -170,71 +205,7 @@ export const projects = [
     // webapp: "https://hotelsantamaria-arua.com/",
   },
 
-//    {
-//     id: 1,
-//     title: "Wallpaper Designs",
-//     description:
-//       "Explore a selection of thoughtfully crafted logos, each a visual representation of brand identity. Crafted using Illustrator, Figma, and Photoshop, these logos go beyond design—they embody brand values. Take a closer look at how creativity, precision, and innovation converge to shape impactful brand identities.",
-//     image: require("../images/Wallpaper-2.png"),
 
-//     tags: [
-//       "FIGMA",
-//       "PHOTOSHOP",
-//       "ILLUSTRATOR",
-//     ],
-//     category: "graphic design",
-//     // webapp: "https://hotelsantamaria-arua.com/",
-//   },
-
-//  {
-//     id: 2,
-//     title: "Wallpaper Designs",
-//     description:
-//       "Explore a selection of thoughtfully crafted logos, each a visual representation of brand identity. Crafted using Illustrator, Figma, and Photoshop, these logos go beyond design—they embody brand values. Take a closer look at how creativity, precision, and innovation converge to shape impactful brand identities.",
-//     image: require("../images/Text-effect.jpg"),
-
-//     tags: [
-//       "FIGMA",
-//       "PHOTOSHOP",
-//       "ILLUSTRATOR",
-//     ],
-//     category: "graphic design",
-//     // webapp: "https://hotelsantamaria-arua.com/",
-//   },
-
-  
-//  {
-//     id: 3,
-//     title: "Fuurniture Sale POSTER",
-//     description:
-//       "Explore a selection of thoughtfully crafted logos, each a visual representation of brand identity. Crafted using Illustrator, Figma, and Photoshop, these logos go beyond design—they embody brand values. Take a closer look at how creativity, precision, and innovation converge to shape impactful brand identities.",
-//     image: require("../images/Sofa-sale.jpeg"),
-
-//     tags: [
-//       "FIGMA",
-//       "PHOTOSHOP",
-//       "ILLUSTRATOR",
-//     ],
-//     category: "graphic design",
-//     // webapp: "https://hotelsantamaria-arua.com/",
-//   },
-
-//     {
-//     id: 4,
-//     title: "Wallpaper Designs",
-//     description:
-//       "Explore a selection of thoughtfully crafted logos, each a visual representation of brand identity. Crafted using Illustrator, Figma, and Photoshop, these logos go beyond design—they embody brand values. Take a closer look at how creativity, precision, and innovation converge to shape impactful brand identities.",
-//     image: require("../images/Desktop-Wallpaper.png"),
-
-//     tags: [
-//       "FIGMA",
-//       "PHOTOSHOP",
-//       "ILLUSTRATOR",
-//     ],
-//     category: "graphic design",
-//     // webapp: "https://hotelsantamaria-arua.com/",
-//   },
-  
   {
     "id": 5,
     "title": "web Agency",
@@ -262,9 +233,27 @@ export const projects = [
       "ILLUSTRATOR",
     ],
     category: "android app",
-    
   },
- 
+
+  {
+    id: 7,
+  title: "SH-Painters Brand Identity",
+  description:
+    "A complete brand identity project for SH-Painters, covering the full logo design process from concept sketches to final execution. This project includes the brand identity guidelines, the logo development process, and the final logo variations — showing how a painting company's visual identity was built from the ground up to feel professional, trustworthy, and memorable.",
+  image: require("../assest/projects/Brand Identity(SH-Painters).jpeg"),
+  images: [
+    require("../assest/projects/Brand Identity(SH-Painters).jpeg"),
+    require("../assest/projects/LOGO PROCESS-(SH-Painters).jpeg"),
+    require("../assest/projects/LOGOS-(SH-Painters).jpeg"),
+  ],
+  tags: [
+    "FIGMA",
+    "PHOTOSHOP",
+    "ILLUSTRATOR",
+  ],
+  category: "graphic design",
+  },
+    
   
 ];
 

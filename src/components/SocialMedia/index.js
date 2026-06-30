@@ -1,8 +1,10 @@
 import React from 'react';
-import styled from 'styled-components';
-import { Container, Wrapper, Title, Desc, CardContainer } from '../Packages/PackagesStyle';
+// import styled from 'styled-components';
+// import { Container, Wrapper, Title, Desc, CardContainer } from '../Packages/PackagesStyle';
+import { Container, Wrapper, CardContainer } from '../Packages/PackagesStyle';
+
 import SocialMedia from '../Cards/SocialMedia';
-import { socialmedia } from '../../data/constants'; // Import your updated data array
+// import { socialmedia } from '../../data/constants'; // Import your updated data array
 
 const SocialMediaContainer = () => {
     return (

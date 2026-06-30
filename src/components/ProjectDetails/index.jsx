@@ -1,4 +1,4 @@
-import { CloseRounded, GitHub, LinkedIn } from '@mui/icons-material';
+import { CloseRounded } from '@mui/icons-material';
 import { Modal } from '@mui/material';
 import React from 'react'
 import styled from 'styled-components'
@@ -9,7 +9,8 @@ height: 100%;
 position: absolute;
 top: 0;
 left: 0;
-background-color: #000000a7;
+background-color: rgba(10, 10, 26, 0.85);
+backdrop-filter: blur(4px);
 display: flex;
 align-items: top;
 justify-content: center;
@@ -23,18 +24,20 @@ width: 100%;
 border-radius: 16px;
 margin: 50px 12px;
 height: min-content;
-background-color: ${({ theme }) => theme.card};
-color: ${({ theme }) => theme.text_primary};
+background-color: #0d0d2b;
+border: 1px solid rgba(255, 255, 255, 0.08);
+color: #fff;
 padding: 20px;
 display: flex;
 flex-direction: column;
 position: relative;
+font-family: 'Poppins', sans-serif;
 `;
 
 const Title = styled.div`
   font-size: 28px;
-  font-weight: 600;
-  color: ${({ theme }) => theme.text_primary};
+  font-weight: 700;
+  color: #fff;
   margin: 8px 6px 0px 6px;
   @media only screen and (max-width: 600px) {
       font-size: 24px;
@@ -46,18 +49,17 @@ const Date = styled.div`
     font-size: 16px;
     margin: 2px 6px;
     font-weight: 400;
-    color: ${({ theme }) => theme.text_secondary};
+    color: rgba(255, 255, 255, 0.4);
     @media only screen and (max-width: 768px){
         font-size: 12px;
     }
 `
 
-
-
 const Desc = styled.div`
     font-size: 16px;
+    line-height: 1.8;
     font-weight: 400;
-    color: ${({ theme }) => theme.text_primary};
+    color: rgba(255, 255, 255, 0.65);
     margin: 8px 6px;
     @media only screen and (max-width: 600px) {
         font-size: 14px;
@@ -69,14 +71,14 @@ const Image = styled.img`
     width: 100%;
     object-fit: cover;
     border-radius: 12px;
-    margin-top: 30px;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.3);
+    display: block;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.4);
 `;
 
 const Label = styled.div`
     font-size: 20px;
     font-weight: 600;
-    color: ${({ theme }) => theme.text_primary};
+    color: #fff;
     margin: 8px 6px;
     @media only screen and (max-width: 600px) {
         font-size: 16px;
@@ -94,15 +96,18 @@ const Tags = styled.div`
 `;
 
 const Tag = styled.div`
-    font-size: 14px;
-    font-weight: 400;
-    color: ${({ theme }) => theme.primary};
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #00C7EF;
     margin: 4px;
-    padding: 4px 8px;
-    border-radius: 8px;
-    background-color: ${({ theme }) => theme.primary + 20};
+    padding: 4px 10px;
+    border-radius: 50px;
+    background-color: rgba(0, 199, 239, 0.1);
+    border: 1px solid rgba(0, 199, 239, 0.2);
     @media only screen and (max-width: 600px) {
-        font-size: 12px;
+        font-size: 11px;
     }
 `;
 
@@ -140,12 +145,11 @@ const MemberName = styled.div`
     font-size: 16px;
     font-weight: 500;
     width: 200px;
-    color: ${({ theme }) => theme.text_primary};
+    color: #fff;
     @media only screen and (max-width: 600px) {
         font-size: 14px;
     }
 `;
-
 
 const ButtonGroup = styled.div`
     display: flex;
@@ -158,58 +162,156 @@ const Button = styled.a`
     width: 100%;
     text-align: center;
     font-size: 16px;
-    font-weight: 600;
-    color: ${({ theme }) => theme.text_primary};
-    padding: 12px 16px;
-    border-radius: 8px;
-    background-color: ${({ theme }) => theme.primary};
-    ${({ dull, theme }) => dull && `
-        background-color: ${theme.bgLight};
-        color: ${theme.text_secondary};
-        &:hover {
-            background-color: ${({ theme }) => theme.bg + 99};
-        }
-    `}
+    font-weight: 700;
+    color: #fff;
+    padding: 13px 16px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, #00C7EF, #5d00ff);
+    box-shadow: 0 0 24px rgba(0, 199, 239, 0.25);
     cursor: pointer;
     text-decoration: none;
-    transition: all 0.5s ease;
+    transition: all 0.3s ease;
     &:hover {
-        background-color: ${({ theme }) => theme.primary + 99};
+        box-shadow: 0 0 36px rgba(0, 199, 239, 0.4);
+        transform: translateY(-2px);
     }
     @media only screen and (max-width: 600px) {
-        font-size: 12px;
+        font-size: 13px;
     }
 `;
 
+const CloseBtn = styled.div`
+    position: absolute;
+    top: 14px;
+    right: 16px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #fff;
+    transition: background 0.2s ease;
+    z-index: 5;
+    &:hover {
+        background: rgba(0, 199, 239, 0.3);
+    }
+`;
 
-const index = ({ openModal, setOpenModal }) => {
+const NavBtn = styled.div`
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(10, 10, 26, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #fff;
+    transition: all 0.2s ease;
+    z-index: 4;
+    &:hover {
+        background: rgba(0, 199, 239, 0.25);
+        border-color: rgba(0, 199, 239, 0.4);
+    }
+    &.prev { left: 12px; }
+    &.next { right: 12px; }
+`;
+
+const ImageWrap = styled.div`
+    position: relative;
+    margin-top: 30px;
+`;
+
+const DotsRow = styled.div`
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 10px;
+`;
+
+const ImgDot = styled.div`
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    cursor: pointer;
+    background: ${({ active }) => active ? '#00C7EF' : 'rgba(255,255,255,0.2)'};
+    box-shadow: ${({ active }) => active ? '0 0 8px rgba(0,199,239,0.6)' : 'none'};
+    transition: all 0.2s ease;
+`;
+
+const ProjectDetails = ({ openModal, setOpenModal }) => {
     const project = openModal?.project;
+    const [activeIndex, setActiveIndex] = React.useState(0);
+
+    if (!project) return null;
+
+    const gallery = project.images && project.images.length > 0
+        ? project.images
+        : [project.image];
+    const hasMultiple = gallery.length > 1;
+
+    const goPrev = (e) => {
+        e.stopPropagation();
+        setActiveIndex((prev) => (prev === 0 ? gallery.length - 1 : prev - 1));
+    };
+    const goNext = (e) => {
+        e.stopPropagation();
+        setActiveIndex((prev) => (prev === gallery.length - 1 ? 0 : prev + 1));
+    };
+    const handleClose = () => {
+        setActiveIndex(0);
+        setOpenModal({ state: false, project: null });
+    };
+
     return (
-        <Modal open={true} onClose={() => setOpenModal({ state: false, project: null })}>
+        <Modal open={true} onClose={handleClose}>
             <Container>
                 <Wrapper>
-                    <CloseRounded
-                        style={{
-                            position: "absolute",
-                            top: "10px",
-                            right: "20px",
-                            cursor: "pointer",
-                        }}
-                        onClick={() => setOpenModal({ state: false, project: null })}
-                    />
-                    <Image src={project?.image} />
+                    <CloseBtn onClick={handleClose}>
+                        <CloseRounded fontSize="small" />
+                    </CloseBtn>
+
+                    <ImageWrap>
+                        <Image src={gallery[activeIndex]} />
+                        {hasMultiple && (
+                            <>
+                                <NavBtn className="prev" onClick={goPrev}>‹</NavBtn>
+                                <NavBtn className="next" onClick={goNext}>›</NavBtn>
+                            </>
+                        )}
+                    </ImageWrap>
+
+                    {hasMultiple && (
+                        <DotsRow>
+                            {gallery.map((_, i) => (
+                                <ImgDot
+                                    key={i}
+                                    active={i === activeIndex}
+                                    onClick={() => setActiveIndex(i)}
+                                />
+                            ))}
+                        </DotsRow>
+                    )}
+
                     <Title>{project?.title}</Title>
                     <Date>{project.date}</Date>
                     <Tags>
-                        {project?.tags.map((tag) => (
-                            <Tag>{tag}</Tag>
+                        {project?.tags.map((tag, i) => (
+                            <Tag key={i}>{tag}</Tag>
                         ))}
                     </Tags>
                     <Desc>{project?.description}</Desc>
-                   
+
                     <ButtonGroup>
-                        {!project.category.includes('graphic design') && ( // Add a conditional check here
-                            <Button href={project?.webapp} target='new'>View Live App</Button>
+                        {project.webapp && !project.category.includes('graphic design') && (
+                            <Button href={project?.webapp} target='_blank' rel="noreferrer">View Live App</Button>
                         )}
                     </ButtonGroup>
 
@@ -220,4 +322,4 @@ const index = ({ openModal, setOpenModal }) => {
     )
 }
 
-export default index
+export default ProjectDetails
