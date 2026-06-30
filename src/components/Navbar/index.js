@@ -5,11 +5,11 @@ import {
 } from './NavbarStyledComponent';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import logo from '../../images/log.png';
-import { useTheme } from 'styled-components';
+// import { useTheme } from 'styled-components';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const theme = useTheme();
+  // const theme = useTheme();
 
   // ✅ Auto-close mobile menu on desktop resize
   useEffect(() => {

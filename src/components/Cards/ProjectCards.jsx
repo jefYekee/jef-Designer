@@ -1,10 +1,10 @@
 import React from 'react'
-import styled, { keyframes } from 'styled-components'
+import styled from 'styled-components'
 
-const shimmer = keyframes`
-  0% { background-position: -200% center; }
-  100% { background-position: 200% center; }
-`
+// const shimmer = keyframes`
+//   0% { background-position: -200% center; }
+//   100% { background-position: 200% center; }
+// `
 
 const Card = styled.div`
   position: relative;
