@@ -40,8 +40,8 @@ const Navbar = () => {
         </MobileIcon>
 
         <NavItems>
-          <NavLink href='#skills'>CREATIVE TOOLS</NavLink>
           <NavLink href='#projects'>PROJECTS</NavLink>
+          <NavLink href='#skills'>CREATIVE TOOLS</NavLink>
           <NavLink href='#contact'>CONTACT</NavLink>
         </NavItems>
 
