@@ -155,7 +155,7 @@ const HeroSection = () => {
 
         <StatRow>
           <Stat>
-            <StatNum>5<span>+</span></StatNum>
+            <StatNum>6<span>+</span></StatNum>
             <StatLabel>Years exp</StatLabel>
           </Stat>
           <Stat>
