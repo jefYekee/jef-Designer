@@ -14,6 +14,7 @@ import ProjectDetails from "./components/ProjectDetails";
 import styled from "styled-components";
 import { Analytics } from '@vercel/analytics/react';
 import './assest/fonts/fonts.css';
+import  Testimonials  from "./components/Testimonials";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
@@ -44,7 +45,10 @@ function App() {
           {/* 4. Skills */}
           <Skills />
 
-          {/* 5. Contact */}
+          {/* 5. Testimonials */}
+          <Testimonials />
+
+          {/* 6. Contact */}
           <Contact />
 
           <Footer />
