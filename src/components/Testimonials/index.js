@@ -27,18 +27,18 @@ const testimonials = [
     id: 1,
     quote:
       "I would love to appreciate you for this flyer — it has attracted the attention of many clients with its exceptional beauty. Thank you so much!",
-    name: "Anonymous Client",
+    name: "Founder, Precious Pure Organics",
     role: "Flyer Design Client",
-    initials: "AC",
+    initials: "P",
     stars: 5,
   },
   {
     id: 2,
     quote:
       "It was really nice working with you and the team. We appreciate the end result. We shall definitely be contacting you back for more projects — thanks and regards.",
-    name: "Hillary",
+    name: "Founder, ToTo Shoe World Arua",
     role: "Logo & Brand Identity Client",
-    initials: "H",
+    initials: "T",
     stars: 5,
   },
   {
