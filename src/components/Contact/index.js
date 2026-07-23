@@ -87,7 +87,7 @@ const Contact = () => {
                 <InfoIconWrap>📍</InfoIconWrap>
                 <div>
                   <InfoLabel>Location</InfoLabel>
-                  <InfoValue>Kampala, Uganda</InfoValue>
+                  <InfoValue>Kigali, Rwanda</InfoValue>
                 </div>
               </InfoItem>
               <InfoItem>
