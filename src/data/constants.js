@@ -191,7 +191,7 @@ export const education = [
 export const projects = [
   {
     id: 0,
-    title: "Creative Logo Showcase",
+    title: "Creative Logo + Flyer Showcase",
     description:
       "Explore a selection of thoughtfully crafted logos, each a visual representation of brand identity. Crafted using Illustrator, Figma, and Photoshop, these logos go beyond design—they embody brand values. Take a closer look at how creativity, precision, and innovation converge to shape impactful brand identities.",
     image: require("../images/projects/graphics.png"),
@@ -208,7 +208,7 @@ export const projects = [
 
   {
     "id": 5,
-    "title": "web Agency",
+    "title": "web Agency UI",
     "description": "This UI showcases a sleek and modern website design for an innovative IT agency. With a focus on clean aesthetics and user-friendly navigation, the design seamlessly adapts to both desktop and mobile screens, ensuring a smooth experience across all devices. The layout highlights the agency's expertise in technology solutions, featuring intuitive sections for services, portfolio, and client engagement. This design is crafted to enhance user interaction and reflect the agency’s cutting-edge approach to digital transformation",
     image: require("../images/projects/web-app.jpg"),
     tags: [
@@ -221,7 +221,7 @@ export const projects = [
 
   {
     id: 6,
-    title: "TEAMWORK HOMECARE",
+    title: "TEAMWORK HOMECARE MOBILE APP",
     description:
       "This UI showcases a sleek and modern mobile app design for Teamwork Homecare, a seamless platform for booking nurses and healthcare professionals. Designed with a user-friendly interface and intuitive navigation, the app ensures effortless access to essential healthcare services.",
     
