@@ -191,7 +191,7 @@ export const education = [
 export const projects = [
   {
     id: 0,
-    title: "Creative Logo + Flyer Showcase",
+    title: "Creative Logos + Flyer Showcase",
     description:
       "Explore a selection of thoughtfully crafted logos, each a visual representation of brand identity. Crafted using Illustrator, Figma, and Photoshop, these logos go beyond design—they embody brand values. Take a closer look at how creativity, precision, and innovation converge to shape impactful brand identities.",
     image: require("../images/projects/graphics.png"),
