@@ -37,7 +37,7 @@ export const Bio = {
 //       { name: "React Js", image: require("../images/react.png") },
 //       { name: "Next Js", image: require("../images/nextjs.jpg") },
 //       { name: "HTML5", image: require("../images/html5.png") },
-  
+
 //     ],
 //   },
 // ];
@@ -92,7 +92,7 @@ export const experiences = [
     company: "Vigilantliving -> Giga Health LTD ",
     date: "Jan 2021 - Present",
     desc: "Appointed as the Chief Technical Officer at Vigilantliving, a division of Giga Health LTD, since January 2021.Proficiency in HTML, CSS, JavaScript, and Node.js for efficient application development.  Leading hands-on research and development for groundbreaking e-health and wellness tech solutions. Skilled in Development Operations, Docker, and Amazon Web Services (AWS) EC2 for streamlined deployment and management, contributing to our technology-driven startup culture.",
-      skills: [
+    skills: [
       "HTML",
       "CSS",
       "JavaScript",
@@ -111,7 +111,7 @@ export const experiences = [
     company: "Teamwork Homecare services",
     date: "Dec 2023 - Present",
     desc: "Junior Frontend Developer transforming Figma designs into seamless mobile interfaces for optimal user experiences.",
-      skills: [
+    skills: [
       "Figma",
       "React Native",
       "React js",
@@ -156,8 +156,8 @@ export const experiences = [
       "MongoDB",
     ],
   },
- 
- 
+
+
 ];
 
 export const education = [
@@ -185,7 +185,7 @@ export const education = [
     desc: "I completed a Beginner to Advanced Web Development course on Udemy, where I learned the fundamentals of web development from HTML and CSS to JavaScript and React. I also had the opportunity to collaborate with a team of experienced developers on exciting projects, which helped me to learn new technologies and build amazing projects.",
     degree: "CERTIFICATE",
   },
-  
+
 ];
 
 export const projects = [
@@ -224,7 +224,7 @@ export const projects = [
     title: "TEAMWORK HOMECARE MOBILE APP",
     description:
       "This UI showcases a sleek and modern mobile app design for Teamwork Homecare, a seamless platform for booking nurses and healthcare professionals. Designed with a user-friendly interface and intuitive navigation, the app ensures effortless access to essential healthcare services.",
-    
+
     image: require("../images/projects/mobile-app.png"),
     // tags: ["React Native", "Expo", "Sanity", "Nextjs"],
     tags: [
@@ -237,24 +237,50 @@ export const projects = [
 
   {
     id: 7,
-  title: "SH-Painters Brand Identity",
-  description:
-    "A complete brand identity project for SH-Painters, covering the full logo design process from concept sketches to final execution. This project includes the brand identity guidelines, the logo development process, and the final logo variations — showing how a painting company's visual identity was built from the ground up to feel professional, trustworthy, and memorable.",
-  image: require("../assest/projects/Brand Identity(SH-Painters).jpeg"),
-  images: [
-    require("../assest/projects/Brand Identity(SH-Painters).jpeg"),
-    require("../assest/projects/LOGO PROCESS-(SH-Painters).jpeg"),
-    require("../assest/projects/LOGOS-(SH-Painters).jpeg"),
-  ],
-  tags: [
-    "FIGMA",
-    "PHOTOSHOP",
-    "ILLUSTRATOR",
-  ],
-  category: "graphic design",
+    title: "SH-Painters Brand Identity",
+    description:
+      "A complete brand identity project for SH-Painters, covering the full logo design process from concept sketches to final execution. This project includes the brand identity guidelines, the logo development process, and the final logo variations — showing how a painting company's visual identity was built from the ground up to feel professional, trustworthy, and memorable.",
+    image: require("../assest/projects/Brand Identity(SH-Painters).jpeg"),
+    images: [
+      require("../assest/projects/Brand Identity(SH-Painters).jpeg"),
+      require("../assest/projects/LOGO PROCESS-(SH-Painters).jpeg"),
+      require("../assest/projects/LOGOS-(SH-Painters).jpeg"),
+    ],
+    tags: [
+      "FIGMA",
+      "PHOTOSHOP",
+      "ILLUSTRATOR",
+    ],
+    category: "graphic design",
   },
-    
-  
+
+  {
+    id: 8,
+    title: "Jetrix Logo an Brand Identity",
+    description:
+      "A complete brand identity for Jetrix, an energy drink brand. Includes logo, icon, color system, brand guidelines, packaging design, merch, and outdoor billboard ad mockups — built around a bold lightning icon and Electric Lime color to capture speed and energy.",
+    image: require("../assest/jetrix/FUll-Brand-Mockup.png"),
+    images: [
+      require("../assest/jetrix/FUll-Brand-Mockup.png"),
+      require("../assest/jetrix/Jetrix-Logo-Braqnd guide-01.png"),
+      require("../assest/jetrix/Jetrix-Logo-Braqnd guide-02.png"),
+      require("../assest/jetrix/Jetrix-Logo-Braqnd guide-03.png"),
+      require("../assest/jetrix/Jetrix-Logo-Braqnd guide-04.png"),
+      require("../assest/jetrix/Jetrix-Logo-Braqnd guide-05.png"),
+      require("../assest/jetrix/Jetrix-Logo-Braqnd guide-06.png"),
+      require("../assest/jetrix/CAN.png"),
+      require("../assest/jetrix/Outdoor-billboard-01.png"),
+      require("../assest/jetrix/Outdoor-billboard-02.png"),
+      require("../assest/jetrix/Outdoor-billboard-03.png"),
+    ],
+    tags: [
+      "PHOTOSHOP",
+      "ILLUSTRATOR",
+    ],
+    category: "graphic design",
+  },
+
+
 ];
 
 export const mypackages = [
@@ -397,7 +423,7 @@ export const certificates = [
     desc: "I completed a Beginner to Advanced Web Development course on Udemy, where I learned the fundamentals of web development from HTML and CSS to JavaScript and React. I also had the opportunity to collaborate with a team of experienced developers on exciting projects, which helped me to learn new technologies and build amazing projects.",
     degree: "CERTIFICATE",
   },
-  
+
 ];
 
 export const TimeLineData = [
