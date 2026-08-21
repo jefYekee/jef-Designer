@@ -256,7 +256,7 @@ export const projects = [
 
   {
     id: 8,
-    title: "Jetrix Logo an Brand Identity",
+    title: "Jetrix Logo and Brand Identity",
     description:
       "A complete brand identity for Jetrix, an energy drink brand. Includes logo, icon, color system, brand guidelines, packaging design, merch, and outdoor billboard ad mockups — built around a bold lightning icon and Electric Lime color to capture speed and energy.",
     image: require("../assest/jetrix/FUll-Brand-Mockup.png"),
