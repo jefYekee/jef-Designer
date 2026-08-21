@@ -280,6 +280,23 @@ export const projects = [
     category: "graphic design",
   },
 
+  {
+    id: 9,
+    title: "Smartcool Ui/UX Design",
+    description:
+      "A modern and user-friendly UI/UX design created for SmartCool, focused on clean visuals, easy navigation, and a smooth user experience.",
+    image: require("../assest/Smartcool-UI-UX.png"),
+    images: [
+      require("../assest/Smartcool-UI-UX.png"),
+      
+    ],
+    tags: [
+      "Figma",
+      "ILLUSTRATOR",
+    ],
+    category: "web app",
+  },
+
 
 ];
 
