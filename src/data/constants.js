@@ -197,19 +197,24 @@ export const projects = [
     image: require("../assest/flyers/Buyinza-Media flyer.png"),
 
     images: [
-      require("../assest/flyers/Buyinza-Media flyer.png"),
-      require("../assest/flyers/Poster.png"),
-      require("../assest/flyers/Akagera-Trip Flyer(A5).png"),
-      require("../assest/flyers/Airtel-flyer.png"),
-      require("../assest/flyers/Rosehip.png"),
-      require("../assest/flyers/ecoPrint-POSTER.png"),
-      require("../assest/flyers/helo August.png"),
-      require("../assest/flyers/palm-sunday.png"),
-      require("../assest/flyers/linkedin Banner.png"),
-      require("../assest/flyers/(180x180cm)Bridal-To-Be (final).png"),
-      require("../assest/flyers/A3 Card.png"),
+      require("../assest/flyers/Buyinza-Media-flyer.webp"),
+      require("../assest/flyers/Poster.webp"),
+      require("../assest/flyers/Akagera-Trip-Flyer-A5-v1.webp"),
+      require("../assest/flyers/Airtel-flyer.webp"),
+      require("../assest/flyers/Rosehip.webp"),
+      require("../assest/flyers/ecoPrint-POSTER.webp"),
+      require("../assest/flyers/helo August.webp"),
+      require("../assest/flyers/palm-sunday.webp"),
+      require("../assest/flyers/linkedin Banner.webp"),
+      require("../assest/flyers/banner-BAR.webp"),
+      require("../assest/flyers/Bridal-To-Be-final.webp"),
+      require("../assest/flyers/A3-POSTER.webp"),
+      require("../assest/flyers/v-01.webp"),
       require("../assest/flyers/RONALDO.png"),
-      require("../assest/flyers/files/j-POSTER.webp"),
+      require("../assest/flyers/j-POSTER.webp"),
+      require("../assest/flyers/Iphone-Poster.webp"),
+
+
 
     ],
 
