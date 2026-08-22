@@ -191,10 +191,26 @@ export const education = [
 export const projects = [
   {
     id: 0,
-    title: "Creative Logos + Flyer Showcase",
+    title: "Creative Flyers Banner Showcase",
     description:
       "Explore a selection of thoughtfully crafted logos and flyers, each a visual representation of brand identity. Crafted using Illustrator, Figma, and Photoshop, these logos go beyond design—they embody brand values. Take a closer look at how creativity, precision, and innovation converge to shape impactful brand identities.",
-    image: require("../images/projects/graphics.png"),
+    image: require("../assest/flyers/Buyinza-Media flyer.png"),
+
+    images: [
+      require("../assest/flyers/Buyinza-Media flyer.png"),
+      require("../assest/flyers/Poster.png"),
+      require("../assest/flyers/Iphone Poster.png"),
+      require("../assest/flyers/Rosehip.png"),
+      require("../assest/flyers/ecoPrint-POSTER.png"),
+      require("../assest/flyers/helo August.png"),
+      require("../assest/flyers/palm-sunday.png"),
+      require("../assest/flyers/linkedin Banner.png"),
+      require("../assest/flyers/Akagera-Trip Flyer(A5).png"),
+      require("../assest/flyers/Airtel-flyer.png"),
+      require("../assest/flyers/(180x180cm)Bridal-To-Be (final).png"),
+      require("../assest/flyers/A3 Card.png"),
+    ],
+
 
     tags: [
       "FIGMA",
