@@ -208,7 +208,9 @@ export const projects = [
       require("../assest/flyers/linkedin Banner.png"),
       require("../assest/flyers/(180x180cm)Bridal-To-Be (final).png"),
       require("../assest/flyers/A3 Card.png"),
-      require("../assest/flyers/Iphone Poster.png"),
+      require("../assest/flyers/RONALDO.png"),
+      require("../assest/flyers/j-POSTER.png"),
+
     ],
 
 
