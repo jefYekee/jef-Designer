@@ -263,11 +263,11 @@ export const projects = [
     title: "SH-Painters Brand Identity",
     description:
       "A complete brand identity project for SH-Painters, covering the full logo design process from concept sketches to final execution. This project includes the brand identity guidelines, the logo development process, and the final logo variations — showing how a painting company's visual identity was built from the ground up to feel professional, trustworthy, and memorable.",
-    image: require("../assest/projects/Brand Identity(SH-Painters).jpeg"),
+    image: require("../assest/projects/Brand-Identity-SH-Painters.webp"),
     images: [
-      require("../assest/projects/Brand Identity(SH-Painters).jpeg"),
-      require("../assest/projects/LOGO PROCESS-(SH-Painters).jpeg"),
-      require("../assest/projects/LOGOS-(SH-Painters).jpeg"),
+      require("../assest/projects/Brand-Identity-SH-Painters.webp"),
+      require("../assest/projects/LOGO-PROCESS-SH-Painters.webp"),
+      require("../assest/projects/LOGOS-SH-Painters.webp"),
     ],
     tags: [
       "FIGMA",
