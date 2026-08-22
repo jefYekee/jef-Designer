@@ -201,10 +201,14 @@ export const projects = [
       require("../assest/flyers/Poster.webp"),
       require("../assest/flyers/Akagera-Trip-Flyer-A5-v1.webp"),
       require("../assest/flyers/Airtel-flyer.webp"),
+      require("../assest/flyers/creative.png"),
+      require("../assest/flyers/poster-sofa-repair.jpeg"),
       require("../assest/flyers/Rosehip.webp"),
       require("../assest/flyers/ecoPrint-POSTER.webp"),
+      require("../assest/flyers/BlueTech Poster.jpg"),
       require("../assest/flyers/helo August.png"),
       require("../assest/flyers/palm-sunday.webp"),
+      require("../assest/flyers/main-wallpaper.png"),
       require("../assest/flyers/linkedin-Banner.webp"),
       require("../assest/flyers/banner-BAR.webp"),
       require("../assest/flyers/Bridal-To-Be-final.webp"),
@@ -213,6 +217,8 @@ export const projects = [
       require("../assest/flyers/RONALDO.png"),
       require("../assest/flyers/j-POSTER.webp"),
       require("../assest/flyers/Iphone-Poster.webp"),
+      require("../assest/flyers/Food-Poster.png"),
+
 
 
 
