@@ -209,7 +209,7 @@ export const projects = [
       require("../assest/flyers/(180x180cm)Bridal-To-Be (final).png"),
       require("../assest/flyers/A3 Card.png"),
       require("../assest/flyers/RONALDO.png"),
-      require("../assest/flyers/j-POSTER.png"),
+      require("../assest/flyers/files/j-POSTER.webp"),
 
     ],
 
@@ -279,17 +279,17 @@ export const projects = [
       "A complete brand identity for Jetrix, an energy drink brand. Includes logo, icon, color system, brand guidelines, packaging design, merch, and outdoor billboard ad mockups — built around a bold lightning icon and Electric Lime color to capture speed and energy.",
     image: require("../assest/jetrix/FUll-Brand-Mockup.png"),
     images: [
-      require("../assest/jetrix/FUll-Brand-Mockup.png"),
+      require("../assest/jetrix/FUll-Brand-Mockup.webp"),
       require("../assest/jetrix/Jetrix-Logo-Braqnd guide-01.png"),
       require("../assest/jetrix/Jetrix-Logo-Braqnd guide-02.png"),
       require("../assest/jetrix/Jetrix-Logo-Braqnd guide-03.png"),
       require("../assest/jetrix/Jetrix-Logo-Braqnd guide-04.png"),
       require("../assest/jetrix/Jetrix-Logo-Braqnd guide-05.png"),
       require("../assest/jetrix/Jetrix-Logo-Braqnd guide-06.png"),
-      require("../assest/jetrix/CAN.png"),
-      require("../assest/jetrix/Outdoor-billboard-01.png"),
-      require("../assest/jetrix/Outdoor-billboard-02.png"),
-      require("../assest/jetrix/Outdoor-billboard-03.png"),
+      require("../assest/jetrix/CAN.webp"),
+      require("../assest/jetrix/Outdoor-billboard-01.webp"),
+      require("../assest/jetrix/Outdoor-billboard-02.webp"),
+      require("../assest/jetrix/Outdoor-billboard-03.webp"),
     ],
     tags: [
       "PHOTOSHOP",
