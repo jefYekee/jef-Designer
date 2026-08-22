@@ -203,7 +203,7 @@ export const projects = [
       require("../assest/flyers/Airtel-flyer.webp"),
       require("../assest/flyers/Rosehip.webp"),
       require("../assest/flyers/ecoPrint-POSTER.webp"),
-      require("../assest/flyers/helo August.webp"),
+      require("../assest/flyers/helo August.png"),
       require("../assest/flyers/palm-sunday.webp"),
       require("../assest/flyers/linkedin Banner.webp"),
       require("../assest/flyers/banner-BAR.webp"),
