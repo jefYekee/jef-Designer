@@ -191,7 +191,7 @@ export const education = [
 export const projects = [
   {
     id: 0,
-    title: "Creative Flyers Banner Showcase",
+    title: "Creative Flyers, Banners, Posters Showcase",
     description:
       "Explore a selection of flyers, posters, and banners designed to communicate ideas clearly and make a strong visual impact. Each piece combines creativity, layout, typography, and brand style to create designs that are both attractive and effective.",
     image: require("../assest/flyers/Buyinza-Media flyer.png"),
