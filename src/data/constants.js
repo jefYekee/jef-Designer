@@ -193,7 +193,7 @@ export const projects = [
     id: 0,
     title: "Creative Flyers Banner Showcase",
     description:
-      "Explore a selection of thoughtfully crafted logos and flyers, each a visual representation of brand identity. Crafted using Illustrator, Figma, and Photoshop, these logos go beyond design—they embody brand values. Take a closer look at how creativity, precision, and innovation converge to shape impactful brand identities.",
+      "Explore a selection of flyers, posters, and banners designed to communicate ideas clearly and make a strong visual impact. Each piece combines creativity, layout, typography, and brand style to create designs that are both attractive and effective.",
     image: require("../assest/flyers/Buyinza-Media flyer.png"),
 
     images: [
