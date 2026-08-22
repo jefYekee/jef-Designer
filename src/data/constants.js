@@ -205,10 +205,10 @@ export const projects = [
       require("../assest/flyers/ecoPrint-POSTER.webp"),
       require("../assest/flyers/helo August.png"),
       require("../assest/flyers/palm-sunday.webp"),
-      require("../assest/flyers/linkedin Banner.webp"),
+      require("../assest/flyers/linkedin-Banner.webp"),
       require("../assest/flyers/banner-BAR.webp"),
       require("../assest/flyers/Bridal-To-Be-final.webp"),
-      require("../assest/flyers/A3-POSTER.webp"),
+      require("../assest/flyers/A3_Card.webp"),
       require("../assest/flyers/v-01.webp"),
       require("../assest/flyers/RONALDO.png"),
       require("../assest/flyers/j-POSTER.webp"),
@@ -282,7 +282,7 @@ export const projects = [
     title: "Jetrix Logo and Brand Identity",
     description:
       "A complete brand identity for Jetrix, an energy drink brand. Includes logo, icon, color system, brand guidelines, packaging design, merch, and outdoor billboard ad mockups — built around a bold lightning icon and Electric Lime color to capture speed and energy.",
-    image: require("../assest/jetrix/FUll-Brand-Mockup.png"),
+    image: require("../assest/jetrix/FUll-Brand-Mockup.webp"),
     images: [
       require("../assest/jetrix/FUll-Brand-Mockup.webp"),
       require("../assest/jetrix/Jetrix-Logo-Braqnd guide-01.png"),
