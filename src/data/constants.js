@@ -326,6 +326,47 @@ export const projects = [
     category: "web app",
   },
 
+ {
+  id: 10,
+  title: "Jetrix Motion Graphics",
+  description: "Motion graphic clips created for the Jetrix energy drink brand — animated logo reveals, product...",
+  image: require("../assest/motion/jetrix-thumbnail.png"), // static poster frame — you need this file
+  video: require("../assest/motion/jetrix-brand-guide.mp4"), // hover preview
+  videos: [
+  //   require("../assest/motion/jef-logo-combo.mp4"),
+    require("../assest/motion/jetrix-brand-guide.mp4"),
+  ],
+  tags: ["ILLUSTRATOR, AFTER EFFECTS", "PREMIERE PRO"],
+  category: "motion graphic",
+},
+
+{
+  id: 11,
+  title: "Logo & Food Promo Animation",
+  description: "A self-initiated motion piece created in After Effects — a logo reveal animation followed by menu item promos (burgers, drinks, fries) with price and title call-outs",
+  image: require("../assest/motion/jef-thumbnail.png"), // static poster frame — you need this file
+  video: require("../assest/motion/jef-logo-combo.mp4"), // hover preview
+  videos: [
+  //   require("../assest/motion/jef-logo-combo.mp4"),
+    require("../assest/motion/jef-logo-combo.mp4"),
+  ],
+  tags: ["ILLUSTRATOR, AFTER EFFECTS", "PREMIERE PRO"],
+  category: "motion graphic",
+},
+
+{
+  id: 12,
+  title: "Jibu — Motion Graphics Concept",
+  description: "Motion graphics concept for Jibu — animated slide-in sequences for products, pricing, and text, created to demonstrate dynamic product presentation",
+  image: require("../assest/motion/jibu-thumbnail.png"), // static poster frame — you need this file
+  video: require("../assest/motion/jibu-final-clip.mp4"), // hover preview
+  videos: [
+  //   require("../assest/motion/jef-logo-combo.mp4"),
+    require("../assest/motion/jibu-final-clip.mp4"),
+  ],
+  tags: ["ILLUSTRATOR, AFTER EFFECTS", "PREMIERE PRO"],
+  category: "motion graphic",
+},
 
 ];
 

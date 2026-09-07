@@ -1,10 +1,5 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from 'styled-components'
-
-// const shimmer = keyframes`
-//   0% { background-position: -200% center; }
-//   100% { background-position: 200% center; }
-// `
 
 const Card = styled.div`
   position: relative;
@@ -37,6 +32,17 @@ const ImageWrap = styled.div`
 `
 
 const Image = styled.img`
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+
+  ${Card}:hover & {
+    transform: scale(1.05);
+  }
+`
+
+const Video = styled.video`
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -153,10 +159,20 @@ const ViewBtn = styled.div`
 `
 
 const ProjectCards = ({ project, setOpenModal }) => {
+  const [hovering, setHovering] = useState(false)
+
   return (
-    <Card onClick={() => setOpenModal({ state: true, project })}>
+    <Card
+      onClick={() => setOpenModal({ state: true, project })}
+      onMouseEnter={() => setHovering(true)}
+      onMouseLeave={() => setHovering(false)}
+    >
       <ImageWrap>
-        <Image src={project.image} alt={project.title} />
+        {project.video && hovering ? (
+          <Video src={project.video} autoPlay loop muted playsInline />
+        ) : (
+          <Image src={project.image} alt={project.title} />
+        )}
         <ImageOverlay />
       </ImageWrap>
 

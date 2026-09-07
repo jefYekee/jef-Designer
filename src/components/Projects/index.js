@@ -31,17 +31,26 @@ const Projects = ({ openModal, setOpenModal }) => {
         </Desc>
 
         <ToggleButtonGroup>
-          {['all', 'web app', 'android app', 'graphic design'].map((cat, i, arr) => (
+          {['all', 'web app', 'android app', 'graphic design', 'motion graphic'].map((cat, i, arr) => (
             <React.Fragment key={cat}>
               <ToggleButton
                 active={toggle === cat}
                 onClick={() => setToggle(cat)}
               >
-                {cat === 'all' ? 'All' : cat === 'web app' ? "Web Apps" : cat === 'android app' ? 'Mobile Apps' : 'Graphic Design'}
+                {cat === 'all'
+                  ? 'All'
+                  : cat === 'web app'
+                  ? 'Web Apps'
+                  : cat === 'android app'
+                  ? 'Mobile Apps'
+                  : cat === 'graphic design'
+                  ? 'Graphic Design'
+                  : 'Motion Graphics'
+                }
               </ToggleButton>
               {i < arr.length - 1 && <Divider />}
             </React.Fragment>
-          ))}
+        ))}
         </ToggleButtonGroup>
 
         <CardContainer>
