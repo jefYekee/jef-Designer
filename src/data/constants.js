@@ -54,7 +54,9 @@ export const skills = [
       { name: "Figma", image: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/figma.svg" },
       { name: "Adobe Photoshop", image: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/adobephotoshop.svg" },
       { name: "Adobe Illustrator", image: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/adobeillustrator.svg" },
-      { name: "Adobe XD", image: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/adobexd.svg" },
+      { name: "Adobe After Effects", image: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/adobeaftereffects.svg" },
+      { name: "Adobe Premiere Pro", image: "https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/adobepremierepro.svg" },
+
     ],
   },
   {
