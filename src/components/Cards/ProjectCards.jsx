@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 
 const Card = styled.div`
@@ -35,18 +35,38 @@ const Image = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, opacity 0.3s ease;
 
   ${Card}:hover & {
     transform: scale(1.05);
   }
+
+  /* Hide the poster image on hover-capable devices once a video exists,
+     so the video shows instead. On touch devices this rule never matches,
+     so the image just stays visible always. */
+  @media (hover: hover) and (pointer: fine) {
+    ${Card}:hover & {
+      opacity: ${(props) => (props.$hasVideo ? 0 : 1)};
+    }
+  }
 `
 
 const Video = styled.video`
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.4s ease;
+
+  /* Only ever rendered/visible on devices that truly support hover
+     (mouse / trackpad). Touchscreens never match this query, so on
+     mobile this element is simply never shown. */
+  display: none;
+
+  @media (hover: hover) and (pointer: fine) {
+    display: block;
+  }
 
   ${Card}:hover & {
     transform: scale(1.05);
@@ -57,6 +77,7 @@ const ImageOverlay = styled.div`
   position: absolute;
   inset: 0;
   background: linear-gradient(180deg, transparent 40%, rgba(10, 10, 26, 0.95) 100%);
+  pointer-events: none;
 `
 
 const Body = styled.div`
@@ -159,19 +180,12 @@ const ViewBtn = styled.div`
 `
 
 const ProjectCards = ({ project, setOpenModal }) => {
-  const [hovering, setHovering] = useState(false)
-
   return (
-    <Card
-      onClick={() => setOpenModal({ state: true, project })}
-      onMouseEnter={() => setHovering(true)}
-      onMouseLeave={() => setHovering(false)}
-    >
+    <Card onClick={() => setOpenModal({ state: true, project })}>
       <ImageWrap>
-        {project.video && hovering ? (
+        <Image src={project.image} alt={project.title} $hasVideo={!!project.video} />
+        {project.video && (
           <Video src={project.video} autoPlay loop muted playsInline />
-        ) : (
-          <Image src={project.image} alt={project.title} />
         )}
         <ImageOverlay />
       </ImageWrap>
