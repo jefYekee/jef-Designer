@@ -370,6 +370,34 @@ export const projects = [
   category: "motion graphic",
 },
 
+{
+  id: 13,
+  title: "Logo intro Animation ",
+  description: "Motion graphics logo animation for JEF Creative, featuring smooth transitions and dynamic brand movement.",
+  image: require("../assest/motion/thumbnail-jef-logo-into.png"), // static poster frame — you need this file
+  video: require("../assest/motion/Jef-Logo(Animation).mp4"), // hover preview
+  videos: [
+  //   require("../assest/motion/jef-logo-combo.mp4"),
+    require("../assest/motion/Jef-Logo(Animation).mp4"),
+  ],
+  tags: ["ILLUSTRATOR, AFTER EFFECTS"],
+  category: "motion graphic",
+},
+
+{
+  id: 14,
+  title: "Brand Identity & Motion Design fro Velora ",
+  description: "A complete brand identity and motion design project, from logo creation and animation to apparel, billboard, tote bag, and cosmetic packaging applications.",
+  image: require("../assest/motion/thumbnail-velora.png"), // static poster frame — you need this file
+  video: require("../assest/motion/velora_brand.mp4"), // hover preview
+  videos: [
+  //   require("../assest/motion/jef-logo-combo.mp4"),
+    require("../assest/motion/velora_brand.mp4"),
+  ],
+  tags: ["ILLUSTRATOR, AFTER EFFECTS", "PREMIERE PRO"],
+  category: "motion graphic",
+},
+
 ];
 
 export const mypackages = [
