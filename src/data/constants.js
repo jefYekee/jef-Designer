@@ -402,6 +402,23 @@ export const projects = [
   category: "motion graphic",
 },
 
+{
+  id: 14,
+  title: "Fresh Kyenyanja: Food Motion Showcase.",
+  description: "A motion video that showcases the dishes of Fresh Kyenyanja, built to make her food look as fresh and appetising on screen as it is on the plate.",
+  image: require("../assest/motion/fk-Thumbnail.png"), // static poster frame — you need this file
+  video: require("../assest/motion/final-fk-ig.mp4"), // hover preview
+  videos: [
+  //   require("../assest/motion/jef-logo-combo.mp4"),
+    require("../assest/motion/final-fk-ig.mp4"),
+  ],
+  tags: ["ILLUSTRATOR, AFTER EFFECTS", "PREMIERE PRO"],
+  category: "motion graphic",
+},
+
+
+
+
 ];
 
 export const mypackages = [

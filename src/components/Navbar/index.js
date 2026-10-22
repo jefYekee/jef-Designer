@@ -4,7 +4,7 @@ import {
   MobileHireButton , ButtonContainer, MobileIcon, MobileMenu, MobileLink 
 } from './NavbarStyledComponent';
 import { FaBars, FaTimes } from 'react-icons/fa';
-import logo from '../../images/log.png';
+import logo from '../../images/Logo.png';
 // import { useTheme } from 'styled-components';
 
 const Navbar = () => {
@@ -28,9 +28,9 @@ const Navbar = () => {
         <NavLogo to='/'>
           <a 
             href="/" 
-            style={{ display: "flex", alignItems: "center", color: "white", margin: 0, cursor: "pointer" }}
+            style={{ alignItems: "center", color: "white", margin: 0, cursor: "pointer" }}
           >
-            <img src={logo} width={40} alt='logo' />
+            <img src={logo} alt='logo' />
           </a>
         </NavLogo>
 

@@ -66,24 +66,21 @@ export const NavLogo = styled(LinkR)`
     text-decoration: none;
 
     img {
-        width: 100px; 
-        height: 60px;
+        width: 130px; 
         transition: width 0.3s, height 0.3s;
     }
 
     @media (max-width: 768px) {
         padding: 0;
         img {
-            width: 60px; 
-            height: 50px; 
+            width: 100px; 
         }
     }
 
     @media (max-width: 480px) {
         padding: 0;
         img {
-            width: 50px;
-            height: 40px;
+            width: 100px;
         }
     }
 `;
