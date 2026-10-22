@@ -425,15 +425,17 @@ const StatLabel = styled.div`
 
 // ── Component ───────────────────────────────────────────────────────────────
 
-const About = () => {
+// Roles shown in the typewriter animation
+// (kept outside the component so it's a stable constant and the
+// useEffect below doesn't need it as a dependency)
+const roles = [
+  'Graphic Designer',
+  'Motion Designer',
+  'Brand Designer',
+  'Front-End Developer'
+]
 
-  // Roles shown in the typewriter animation
-  const roles = [
-    'Graphic Designer',
-    'Motion Designer',
-    'Brand Designer',
-    'Front-End Developer'
-  ]
+const About = () => {
 
   const [roleIndex, setRoleIndex] = useState(0)
   const [displayedRole, setDisplayedRole] = useState('')
