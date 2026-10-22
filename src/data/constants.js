@@ -196,12 +196,19 @@ export const projects = [
     title: "Creative Flyers, Banners, Posters Showcase",
     description:
       "Explore a selection of flyers, posters, and banners designed to communicate ideas clearly and make a strong visual impact. Each piece combines creativity, layout, typography, and brand style to create designs that are both attractive and effective.",
-    image: require("../assest/flyers/Buyinza-Media flyer.png"),
+    image: require("../assest/flyers/Astronaut-poster.webp"),
 
     images: [
+      require("../assest/flyers/Astronaut-poster.webp"),
+      require("../assest/flyers/Relaxed-me.webp"),
+      require("../assest/flyers/marketing.webp"),
       require("../assest/flyers/Buyinza-Media-flyer.webp"),
       require("../assest/flyers/Poster.webp"),
+      require("../assest/flyers/independence-day.webp"),
+      require("../assest/flyers/New-Month.webp"),
+      require("../assest/flyers/new-week.webp"),
       require("../assest/flyers/Akagera-Trip-Flyer-A5-v1.webp"),
+      require("../assest/flyers/hire-me.webp"),
       require("../assest/flyers/Airtel-flyer.webp"),
       require("../assest/flyers/creative.png"),
       require("../assest/flyers/poster-sofa-repair.jpeg"),
@@ -220,9 +227,6 @@ export const projects = [
       require("../assest/flyers/j-POSTER.webp"),
       require("../assest/flyers/Iphone-Poster.webp"),
       require("../assest/flyers/Food-Poster.png"),
-
-
-
 
     ],
 
