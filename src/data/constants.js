@@ -333,7 +333,7 @@ export const projects = [
   },
 
  {
-  id: 10,
+  id: 15,
   title: "Jetrix Motion Graphics",
   description: "Motion graphic clips created for the Jetrix energy drink brand — animated logo reveals, product...",
   image: require("../assest/motion/jetrix-thumbnail.png"), // static poster frame — you need this file
@@ -390,7 +390,7 @@ export const projects = [
 
 {
   id: 14,
-  title: "Brand Identity & Motion Design fro Velora ",
+  title: "Brand Identity & Motion Design for Velora ",
   description: "A complete brand identity and motion design project, from logo creation and animation to apparel, billboard, tote bag, and cosmetic packaging applications.",
   image: require("../assest/motion/thumbnail-velora.png"), // static poster frame — you need this file
   video: require("../assest/motion/velora_brand.mp4"), // hover preview
@@ -403,7 +403,7 @@ export const projects = [
 },
 
 {
-  id: 14,
+  id: 15,
   title: "Fresh Kyenyanja: Food Motion Showcase.",
   description: "A motion video that showcases the dishes of Fresh Kyenyanja, built to make her food look as fresh and appetising on screen as it is on the plate.",
   image: require("../assest/motion/fk-Thumbnail.png"), // static poster frame — you need this file
@@ -415,9 +415,6 @@ export const projects = [
   tags: ["ILLUSTRATOR, AFTER EFFECTS", "PREMIERE PRO"],
   category: "motion graphic",
 },
-
-
-
 
 ];
 
