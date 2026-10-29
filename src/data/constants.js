@@ -255,7 +255,7 @@ export const projects = [
   },
 
   {
-    id: 6,
+    id: 1,
     title: "TEAMWORK HOMECARE MOBILE APP",
     description:
       "This UI showcases a sleek and modern mobile app design for Teamwork Homecare, a seamless platform for booking nurses and healthcare professionals. Designed with a user-friendly interface and intuitive navigation, the app ensures effortless access to essential healthcare services.",
@@ -271,7 +271,7 @@ export const projects = [
   },
 
   {
-    id: 7,
+    id: 2,
     title: "SH-Painters Brand Identity",
     description:
       "A complete brand identity project for SH-Painters, covering the full logo design process from concept sketches to final execution. This project includes the brand identity guidelines, the logo development process, and the final logo variations — showing how a painting company's visual identity was built from the ground up to feel professional, trustworthy, and memorable.",
@@ -290,7 +290,7 @@ export const projects = [
   },
 
   {
-    id: 8,
+    id: 3,
     title: "Jetrix Logo and Brand Identity",
     description:
       "A complete brand identity for Jetrix, an energy drink brand. Includes logo, icon, color system, brand guidelines, packaging design, merch, and outdoor billboard ad mockups — built around a bold lightning icon and Electric Lime color to capture speed and energy.",
@@ -316,7 +316,7 @@ export const projects = [
   },
 
   {
-    id: 9,
+    id: 4,
     title: "Smartcool Ui/UX Design",
     description:
       "A modern and user-friendly UI/UX design created for SmartCool, focused on clean visuals, easy navigation, and a smooth user experience.",
@@ -333,7 +333,7 @@ export const projects = [
   },
 
  {
-  id: 15,
+  id: 5,
   title: "Jetrix Motion Graphics",
   description: "Motion graphic clips created for the Jetrix energy drink brand — animated logo reveals, product...",
   image: require("../assest/motion/jetrix-thumbnail.png"), // static poster frame — you need this file
@@ -347,7 +347,7 @@ export const projects = [
 },
 
 {
-  id: 11,
+  id: 6,
   title: "Logo & Food Promo Animation",
   description: "A self-initiated motion piece created in After Effects — a logo reveal animation followed by menu item promos (burgers, drinks, fries) with price and title call-outs",
   image: require("../assest/motion/jef-thumbnail.png"), // static poster frame — you need this file
@@ -361,7 +361,7 @@ export const projects = [
 },
 
 {
-  id: 12,
+  id: 7,
   title: "Jibu — Motion Graphics Concept",
   description: "Motion graphics concept for Jibu — animated slide-in sequences for products, pricing, and text, created to demonstrate dynamic product presentation",
   image: require("../assest/motion/jibu-thumbnail.png"), // static poster frame — you need this file
@@ -375,7 +375,7 @@ export const projects = [
 },
 
 {
-  id: 13,
+  id: 8,
   title: "Logo intro Animation ",
   description: "Motion graphics logo animation for JEF Creative, featuring smooth transitions and dynamic brand movement.",
   image: require("../assest/motion/thumbnail-jef-logo-into.png"), // static poster frame — you need this file
@@ -389,7 +389,7 @@ export const projects = [
 },
 
 {
-  id: 14,
+  id: 9,
   title: "Brand Identity & Motion Design for Velora ",
   description: "A complete brand identity and motion design project, from logo creation and animation to apparel, billboard, tote bag, and cosmetic packaging applications.",
   image: require("../assest/motion/thumbnail-velora.png"), // static poster frame — you need this file
@@ -403,7 +403,7 @@ export const projects = [
 },
 
 {
-  id: 15,
+  id: 10,
   title: "Fresh Kyenyanja: Food Motion Showcase.",
   description: "A motion video that showcases the dishes of Fresh Kyenyanja, built to make her food look as fresh and appetising on screen as it is on the plate.",
   image: require("../assest/motion/fk-Thumbnail.png"), // static poster frame — you need this file
